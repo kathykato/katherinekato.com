@@ -1,12 +1,32 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
-const PortfolioPage = () => (
+const PortfolioPage = ({data}) => (
   <div>
-    <h1>About</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis adipisci, voluptatum, nisi velit praesentium error quia explicabo voluptas ad recusandae enim. Recusandae sequi non vel voluptas. Labore omnis provident ex, perferendis esse, voluptate atque alias officiis dolor eligendi itaque qui?</p>
-    <p>Now go build something great.</p>
+    <h1>Portfolio</h1>
+    {data.allMarkdownRemark.edges.map(item => (
+      <div key={item.node.id}>
+        <h3>{item.node.frontmatter.title}</h3>
+        <Link to={item.node.frontmatter.path}>Read More</Link>
+      </div>
+    ))}
   </div>
 )
+
+export const pageQuery = graphql`
+  query PortfolioIndexQuery {
+    allMarkdownRemark {
+      edges {
+        node {
+          id
+          frontmatter {
+            path
+            title
+          }
+        }
+      }
+    }
+  }
+`
 
 export default PortfolioPage
