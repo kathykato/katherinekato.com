@@ -333,14 +333,15 @@ hgroup {
   margin-bottom: 1.45rem;
 }
 ul {
-  margin-left: 1.45rem;
+  /*margin-left: 1.45rem;
   margin-right: 0;
   margin-top: 0;
   padding-bottom: 0;
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
-  margin-bottom: 1.45rem;
+  margin-bottom: 1.45rem;*/
+  margin: 0;
   list-style-position: outside;
   list-style-image: none;
 }
@@ -623,4 +624,11 @@ pre tt:after {
   html {
     font-size: 100%;
   }
+}
+
+canvas {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
 }

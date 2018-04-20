@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'gatsby-link'
 
 const Navigation = () => (
-  <div
+  <nav
     style={{
       background: '#f4f4f4',
       paddingTop: '10px',
@@ -19,7 +19,7 @@ const Navigation = () => (
       <li><Link to="/about">About</Link></li>
       <li><Link to="/portfolio">Portfolio</Link></li>
     </ul>
-  </div>
+  </nav>
 )
 
 export default Navigation

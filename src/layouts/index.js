@@ -4,6 +4,7 @@ import Helmet from 'react-helmet'
 
 import Header from '../components/header'
 import Navigation from '../components/navigation'
+import Background from '../components/background'
 import './index.css'
 
 const Layout = ({ children, data }) => (
@@ -15,8 +16,11 @@ const Layout = ({ children, data }) => (
         { name: 'keywords', content: 'sample, something' },
       ]}
     />
-    <Header siteTitle={data.site.siteMetadata.title} />
+    {/*<Header siteTitle={data.site.siteMetadata.title} />*/}
     <Navigation />
+
+    <Background />
+
     <div
       style={{
         margin: '0 auto',
