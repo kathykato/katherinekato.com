@@ -632,3 +632,10 @@ canvas {
   height: 100%;
   z-index: -1;
 }
+
+.container {
+  margin: auto;
+  padding: 0 1rem;
+  max-width: 71.25rem;
+  width: 100%;
+}
