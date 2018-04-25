@@ -5,7 +5,7 @@ const Background = () => (
   <Particles params={{
     particles: {
       number: {
-        value: "5",
+        value: "3",
         density: {
           enable: true,
           value_area: 800
@@ -18,8 +18,8 @@ const Background = () => (
         type: "circle"
       },
       size: {
-        value: 70,
-        random: false,
+        value: 40,
+        random: true,
         anim: {
           enable: false,
           speed: 15,
@@ -28,7 +28,7 @@ const Background = () => (
         }
       },
       opacity: {
-        value: 0.5,
+        value: 0.65,
         random: false,
         anim: {
           enable: false,
@@ -42,28 +42,12 @@ const Background = () => (
       },
       move: {
         enable: true,
-        speed: 4,
+        speed: 2,
         direction: "none",
         random: false,
         straight: false,
         out_mode: "out",
         bounce: false
-      }
-    },
-    interactivity: {
-      detect_on: "canvas",
-        events: {
-        onhover: {
-          enable: true,
-          mode: "repulse"
-        },
-        resize: true
-      },
-      modes: {
-        repulse: {
-          distance: 200,
-          duration: 0.4
-        }
       }
     },
     retina_detect: true
