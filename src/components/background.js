@@ -12,7 +12,7 @@ const Background = () => (
         }
       },
       color: {
-        value: ["#fdcfdb", "#d2edf8", "#ededf1", "#e5f4dc", "#e9d5ee", "#fbe4e6", "#fcf5e2"]
+        value: ["#f5bdc3", "#fa89a8", "#f7ccb9", "#bde4ab", "#8dd3ee", "#abe4d6", "#f7e6b9", "#c798d6", "#d2d3dd"]
       },
       shape: {
         type: "circle"
@@ -22,13 +22,13 @@ const Background = () => (
         random: true,
         anim: {
           enable: false,
-          speed: 15,
+          speed: 50,
           size_min: 0.1,
           sync: false
         }
       },
       opacity: {
-        value: 0.65,
+        value: 0.5,
         random: false,
         anim: {
           enable: false,
