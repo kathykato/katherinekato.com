@@ -1,6 +1,7 @@
 ---
 path: "/test-two"
 title: "Test Two Title"
+featuredImage: "./featured-image.jpg"
 ---
 
 # Description

@@ -1,9 +1,9 @@
 const path = require('path');
 
-exports.createPages = ({boundActionCreators, graphql}) => {
-  const {createPage} = boundActionCreators
+exports.createPages = ({ boundActionCreators, graphql }) => {
+  const { createPage } = boundActionCreators
 
-  const portfolioTemplate = path.resolve('src/templates/portfolio-item.js');
+  const portfolioTemplate = path.resolve('./src/templates/portfolio-item.js');
 
   return graphql(`
     {

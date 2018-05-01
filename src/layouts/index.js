@@ -16,14 +16,13 @@ const Layout = ({ children, data }) => (
         { name: 'keywords', content: 'sample, something' },
       ]}
     />
-    {/*<Header siteTitle={data.site.siteMetadata.title} />*/}
     <Navigation />
 
     <Background />
 
-    <div>
+    <section className="page-content">
       {children()}
-    </div>
+    </section>
   </div>
 )
 
