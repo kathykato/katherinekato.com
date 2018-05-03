@@ -7,6 +7,8 @@ import Navigation from '../components/navigation'
 import Background from '../components/background'
 import './index.css'
 
+require('typeface-assistant')
+
 const Layout = ({ children, data }) => (
   <div>
     <Helmet

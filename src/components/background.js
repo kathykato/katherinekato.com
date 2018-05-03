@@ -8,7 +8,7 @@ const Background = () => (
         value: "3",
         density: {
           enable: true,
-          value_area: 800
+          value_area: 750
         }
       },
       color: {
@@ -18,17 +18,17 @@ const Background = () => (
         type: "circle"
       },
       size: {
-        value: 40,
+        value: 60,
         random: true,
         anim: {
           enable: false,
-          speed: 50,
+          speed: 0,
           size_min: 0.1,
           sync: false
         }
       },
       opacity: {
-        value: 0.5,
+        value: 0.425,
         random: false,
         anim: {
           enable: false,
@@ -38,11 +38,11 @@ const Background = () => (
       },
       line_linked: {
         enable: false,
-        distance: 150
+        distance: 0
       },
       move: {
         enable: true,
-        speed: 2,
+        speed: 3,
         direction: "none",
         random: false,
         straight: false,

@@ -15,7 +15,8 @@
     "gatsby-transformer-remark": "^1.7.40",
     "gatsby-transformer-sharp": "^1.6.23",
     "react-helmet": "^5.2.0",
-    "react-particles-js": "^2.1.2"
+    "react-particles-js": "^2.1.2",
+    "typeface-assistant": "0.0.54"
   },
   "keywords": [
     "gatsby"
