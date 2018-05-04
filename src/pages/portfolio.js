@@ -12,7 +12,7 @@ const PortfolioPage = ({data}) => (
             <Link to={item.node.frontmatter.path}>
               <Img sizes={item.node.frontmatter.featuredImage.childImageSharp.sizes} />
             </Link>
-            <h3>{item.node.frontmatter.title}</h3>
+            <h2>{item.node.frontmatter.title}</h2>
             <figcaption>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</figcaption>
           </figure>
         </div>

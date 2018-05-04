@@ -10,13 +10,14 @@ export default function Template({data}) {
       <div className="container">
         <div className="grid">
           <div className="column-xs-12">
-            <Link to="/portfolio">Go Back</Link>
             <h1>{item.frontmatter.title}</h1>
             <Img sizes={item.frontmatter.featuredImage.childImageSharp.sizes} />
             <div dangerouslySetInnerHTML={{__html: item.html}} />
+            
           </div>
         </div>
       </div>
+      <Link to="/portfolio" className="portfolio-bottom">Go Back</Link>
     </div>
   )
 }

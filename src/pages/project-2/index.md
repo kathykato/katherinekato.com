@@ -1,5 +1,5 @@
 ---
-path: "/test-two"
+path: "/project-two"
 title: "Test Two Title"
 featuredImage: "./featured-image.jpg"
 ---

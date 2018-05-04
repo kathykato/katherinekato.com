@@ -24,8 +24,7 @@ const ContactPage = () => (
   <div className="container">
     <div className="grid hero">
       <div className="column-xs-12">
-        <h1>Contact</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <h1>Feel free to say hello! Just send me an <a href="#">email</a>.</h1>
         <p>You can also find me on:</p>
         <ul className="social">
           {Socials.map(link => (
