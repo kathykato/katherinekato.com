@@ -28,7 +28,7 @@ const Background = () => (
         }
       },
       opacity: {
-        value: 0.425,
+        value: 0.35,
         random: false,
         anim: {
           enable: false,

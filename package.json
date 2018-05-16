@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "author": "Katherine Kato",
   "dependencies": {
+    "g": "^2.0.1",
     "gatsby": "^1.9.247",
+    "gatsby-cli": "^1.1.52",
     "gatsby-image": "^1.0.48",
     "gatsby-link": "^1.6.40",
     "gatsby-plugin-catch-links": "^1.0.19",

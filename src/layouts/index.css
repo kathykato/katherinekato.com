@@ -201,7 +201,7 @@ html {
 }
 body {
   /*color: hsla(0, 0%, 0%, 0.8);*/
-  color: #34353b;
+  color: #2a2929;
   /*font-family: georgia, serif;*/
   font-family: 'Assistant', sans-serif;
   font-size: 1.25rem;
@@ -246,6 +246,7 @@ h2 {
   font-weight: 600;
   /*font-size: 1.62671rem;*/
   font-size: 2rem;
+  margin: 1.25rem 0 1rem;
 }
 h3 {
   font-weight: bold;
@@ -663,46 +664,31 @@ nav ul li:nth-child(3) {
 }
 
 a {
-  /*color: #9f64bb;*/
-  /*color: #07020a;*/
-  
-  /*color: #302f33;*/
   color: #34353b;
 }
 
 nav li a {
-  transition: all 0.2s ease-in-out;
-}
-
-nav li a:focus {
-  /*color: #692a9a;*/
-  background: transparent;
-}
-
-nav > li > a:focus, 
-nav > li > a:hover {
+  position: relative;
   text-decoration: none;
 }
 
-nav li a::after {
+nav li a::before {
+  position: absolute;
   content: '';
-  display: block;
+  left: 0;
+  bottom: -2px;
   width: 0;
   height: 2px;
-  /*background: #d3d3d3;*/
-  /*background: #b29ad1;*/
   background: #cfb7ec;
-  /* background: #cfa5de; */
-  margin-top: -1px;
-  -o-transition: width .3s;
-  -webkit-transition: width .3s;
-  -moz-transition: width .3s;
-  -ms-transition: width .3s;
-  transition: width .3s;
+  transition: all 0.3s ease-in-out;
 }
 
-nav li a:hover::after {
-  width:100%;
+nav li a:hover::before {
+  width: 100%;
+}
+
+body {
+  background: #fffffe;
 }
 
 .portfolio-content {
