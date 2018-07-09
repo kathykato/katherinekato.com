@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 
 import Header from '../components/header'
-import Navigation from '../components/navigation'
+import Footer from '../components/footer'
 import Background from '../components/background'
 import './index.css'
 
@@ -14,17 +14,19 @@ const Layout = ({ children, data }) => (
     <Helmet
       title={data.site.siteMetadata.title}
       meta={[
-        { name: 'description', content: 'Sample' },
-        { name: 'keywords', content: 'sample, something' },
+        { name: 'description', content: 'A front-end web developer based in Seattle. I enjoy crafting digital experiences through code & design.' },
+        { name: 'keywords', content: 'katherine kato, web design, front-end web development' },
       ]}
     />
-    <Navigation />
-
     <Background />
+
+    <Header />
 
     <section className="page-content">
       {children()}
     </section>
+
+    <Footer />
   </div>
 )
 

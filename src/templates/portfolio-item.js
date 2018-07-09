@@ -11,9 +11,8 @@ export default function Template({data}) {
         <div className="grid">
           <div className="column-xs-12">
             <h1>{item.frontmatter.title}</h1>
-            <Img sizes={item.frontmatter.featuredImage.childImageSharp.sizes} />
+            <Img sizes={item.frontmatter.featuredImage.childImageSharp.sizes} alt={item.frontmatter.title} />
             <div dangerouslySetInnerHTML={{__html: item.html}} />
-            
           </div>
         </div>
       </div>

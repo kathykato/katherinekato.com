@@ -1,6 +1,20 @@
 import React from 'react'
-import Particles from 'react-particles-js'
+import Parallax from 'react-rellax'
+//import Particles from 'react-particles-js'
 
+const Background = () => (
+  <div>
+  {/*<Parallax data-rellax-speed="3" className="circle red"></Parallax>
+    <Parallax data-rellax-speed="4" className="circle purple"></Parallax>
+<Parallax data-rellax-speed="3" className="circle blue"></Parallax>*/}
+  <Parallax data-rellax-speed="4" className="circle"></Parallax>
+  {/*<Parallax data-rellax-speed="1" className="circle2"></Parallax>*/}
+  {/*<Parallax data-rellax-speed="3" className="circle yellow"></Parallax>
+  <Parallax data-rellax-speed="3" className="circle green"></Parallax>*/}
+  </div>
+)
+
+/*
 const Background = () => (
   <Particles params={{
     particles: {
@@ -54,5 +68,7 @@ const Background = () => (
   }}
   />
 )
+*/
+
 
 export default Background

@@ -1,33 +1,24 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
-const Header = ({ siteTitle }) => (
-  <div
-    style={{
-      background: 'rebeccapurple',
-      marginBottom: '0',
-    }}
-  >
-    <div
-      style={{
-        margin: '0 auto',
-        maxWidth: 960,
-        padding: '1.45rem 1.0875rem',
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: 'white',
-            textDecoration: 'none',
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
-  </div>
+const Header = ({ }) => (
+  <header>
+    <nav>
+      <div className="container">
+        <div className="grid">
+          <div className="column-xs-7 column-md-9">
+            <Link to="/">Katherine Kato</Link>
+          </div>
+          <div className="column-xs-5 column-md-3">
+            <ul>
+              <li><Link to="/">Work</Link></li>
+              <li><a href="mailto:katherine.a.kato@gmail.com">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
 )
 
 export default Header
