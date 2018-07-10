@@ -12,7 +12,7 @@ const Header = ({ }) => (
           <div className="column-xs-5 column-md-3">
             <ul>
               <li><Link to="/">Work</Link></li>
-              <li><a href="mailto:katherine.a.kato@gmail.com">Contact</a></li>
+              <li><Link to="/about">About</Link></li>
             </ul>
           </div>
         </div>
