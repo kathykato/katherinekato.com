@@ -1,35 +1,7 @@
-const path = require('path');
+/**
+ * Implement Gatsby's Node APIs in this file.
+ *
+ * See: https://www.gatsbyjs.org/docs/node-apis/
+ */
 
-exports.createPages = ({ boundActionCreators, graphql }) => {
-  const { createPage } = boundActionCreators
-
-  const portfolioTemplate = path.resolve('./src/templates/portfolio-item.js');
-
-  return graphql(`
-    {
-      allMarkdownRemark {
-        edges {
-          node {
-            id
-            frontmatter {
-              path
-              title
-              subtitle
-            }
-          }
-        }
-      }
-    }
-  `).then(response => {
-    if(response.errors) {
-      return Promise.reject(response.errors)
-    }
-
-    response.data.allMarkdownRemark.edges.forEach(({node}) => {
-      createPage({
-        path: node.frontmatter.path,
-        component: portfolioTemplate
-      })
-    })
-  })
-}
+ // You can delete this file if you're not using it
