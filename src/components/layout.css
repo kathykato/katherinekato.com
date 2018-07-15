@@ -60,7 +60,7 @@ dfn {
 }
 h1 {
   font-size: 2em;
-  margin: .67em 0;
+  margin: 0;
 }
 mark {
   background-color: #ff0;
@@ -185,7 +185,7 @@ textarea {
 html {
   font: 112.5%/1.45em georgia, serif;
   box-sizing: border-box;
-  overflow-y: scroll;
+  /*overflow-y: scroll;*/
 }
 * {
   box-sizing: inherit;
@@ -661,11 +661,11 @@ nav ul li:nth-child(2) {
 
 a {
   color: #2e2f35;
+  text-decoration: none;
 }
 
 nav li a {
   position: relative;
-  text-decoration: none;
 }
 
 nav li a::before {
@@ -744,11 +744,12 @@ figcaption p {
 }
 
 .portfolio-img {
-  transition: opacity 0.5s ease-in-out;
+  /*transition: opacity 0.5s ease-in-out;*/
+  transition: opacity 0.35s ease-in-out;
 }
 
 .portfolio-img:hover {
-    opacity: 0.8;
+    opacity: 0.75;
 }
 
 .page-content {
@@ -790,7 +791,7 @@ margin-top: 2rem;
   }
 
   .hero {
-    height: 75vh;
+    height: 85vh;
   }
 
   .circle {

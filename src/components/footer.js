@@ -19,14 +19,14 @@ const Socials = [
   }
 ]
 
-const Footer = ({ }) => (
+const Footer = () => (
   <footer>
     <div className="container">
       <div className="grid">
         <div className="column-xs-12">
           <ul className="social">
             {Socials.map(link => (
-              <li><a href={link.link} title={link.name} target="_blank" rel="noopener">{link.name}</a></li>
+              <li><a href={link.link} title={link.name} target="_blank" rel="noopener noreferrer">{link.name}</a></li>
             ))}
           </ul>
           <p className="copyright">&copy; 2018 Katherine Kato.</p>
