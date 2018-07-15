@@ -31,12 +31,12 @@ const Layout = ({ children, data }) => (
           ]}
         />
         <Background />
-        <Header siteTitle={data.site.siteMetadata.title} />
+        <Header />
         <section className="page-content">
           {children}
         </section>
 
-        <Footer siteTitle={data.site.siteMetadata.title} />
+        <Footer />
       </>
     )}
   />
