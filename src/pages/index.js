@@ -8,26 +8,26 @@ import Layout from '../components/layout'
 class Index extends React.Component {
   render() {
     const data = this.props.data
-    const codevemberImg = data.codevemberImg.childImageSharp.fluid
     const imageOne = data.imageOne.childImageSharp.fluid
     const imageTwo = data.imageTwo.childImageSharp.fluid
+    const imageThree = data.imageThree.childImageSharp.fluid
     const imageFour = data.imageFour.childImageSharp.fluid
 
     const Portfolio = [
       {
         name: 'Codevember',
         subtitle: 'Creative coding challenge during the month of November.',
-        image: codevemberImg,
+        image: imageOne,
         link: 'https://github.com/kathykato/codevember'
       }, {
         name: 'Cryptocurrency Comparison',
         subtitle: 'Cryptocurrency comparison app made with React.',
-        image: imageOne,
+        image: imageTwo,
         link: 'https://codepen.io/kathykato/live/PEjNGQ/'
       }, {
         name: 'JavaScript 30',
         subtitle: '30 things with vanilla JavaScript for 30 days.',
-        image: imageTwo,
+        image: imageThree,
         link: 'https://github.com/kathykato/javascript30'
       }, {
         name: 'Gallery Template',
@@ -70,36 +70,36 @@ export default Index
 
 export const query = graphql`
   query ImageQuery {
-    codevemberImg: file(
+    imageOne: file(
       relativePath: { regex: "/codevember.png/" }
     ) {
       childImageSharp {
         fluid(
           maxWidth: 800
         ) {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_noBase64
         }
       }
     }
-    imageOne: file(
+    imageTwo: file(
       relativePath: { regex: "/cryptocurrency-comparison.png/" }
     ) {
       childImageSharp {
         fluid(
           maxWidth: 800
         ) {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_noBase64
         }
       }
     }
-    imageTwo: file(
+    imageThree: file(
       relativePath: { regex: "/js30.png/" }
     ) {
       childImageSharp {
         fluid(
           maxWidth: 800
         ) {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_noBase64
         }
       }
     }
@@ -110,7 +110,7 @@ export const query = graphql`
         fluid(
           maxWidth: 800
         ) {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_noBase64
         }
       }
     }

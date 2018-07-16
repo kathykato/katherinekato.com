@@ -29,7 +29,9 @@ const Layout = ({ children, data }) => (
             { name: 'description', content: 'A front-end web developer based in Seattle. I enjoy crafting digital experiences through code & design.' },
             { name: 'keywords', content: 'katherine kato, web design, front-end web development' },
           ]}
-        />
+        >
+          <html lang="en" />
+        </Helmet>
         <Background />
         <Header />
         <section className="page-content">
