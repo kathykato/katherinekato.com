@@ -33,6 +33,7 @@ html {
   box-sizing: inherit;
 }
 body {
+  margin: 0;
   color: #838387;
   font-family: 'Assistant', sans-serif;
   font-size: 1rem;
