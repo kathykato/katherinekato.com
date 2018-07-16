@@ -34,7 +34,9 @@ html {
 }
 body {
   margin: 0;
-  color: #838387;
+  background: #fffdfd;
+  overflow-x: hidden;
+  color: #58585a;
   font-family: 'Assistant', sans-serif;
   font-size: 1rem;
   font-weight: normal;
@@ -203,11 +205,6 @@ nav li a:hover::before {
 
 .social li a:hover::before {
   background: #000;
-}
-
-body {
-  background: #fffdfd;
-  overflow-x: hidden;
 }
 
 .portfolio-content {
