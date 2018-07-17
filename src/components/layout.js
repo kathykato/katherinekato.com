@@ -8,7 +8,7 @@ import Footer from './footer'
 import Background from './background'
 import './layout.scss'
 
-import "typeface-assistant"
+import 'typeface-assistant'
 
 const Layout = ({ children, data }) => (
   <StaticQuery

@@ -265,24 +265,30 @@ footer {
 
 .column-xs-5 {
   flex-basis: 41.66667%;
-  max-width: 41.66667%; }
+  max-width: 41.66667%;
+}
 .column-xs-7 {
   flex-basis: 58.33333%;
-  max-width: 58.33333%; }
+  max-width: 58.33333%;
+}
 
 .column-xs-12 {
   flex-basis: 100%;
-  max-width: 100%; }
+  max-width: 100%;
+}
 
 @media (min-width: 62rem) {
   .grid > [class*="column-"] {
-    padding: 1rem; }
+    padding: 1rem;
+  }
   .column-md-3 {
     flex-basis: 25%;
-    max-width: 25%; }
+    max-width: 25%;
+  }
   .column-md-6 {
     flex-basis: 50%;
-    max-width: 50%; }
+    max-width: 50%;
+  }
   .column-md-9 {
     flex-basis: 75%;
     max-width: 75%; }
