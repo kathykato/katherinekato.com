@@ -132,7 +132,6 @@ nav {
   z-index: 1;
   background: transparent;
   position: absolute;
-grid-area: nav;
 padding: 1.5rem 0;
 width: 100%;
 }
@@ -223,15 +222,19 @@ figcaption p {
   display: inline-block;
 }
 
-.container {
-	opacity: 0;
-	animation: fadeContent 0.5s ease-in-out forwards;
+.page-content {
+  opacity: 0;
+  animation: fadeInUp 1s both;
 }
 
-@keyframes fadeContent {
-	100% {
-		opacity: 1;
-	}
+@keyframes fadeInUp {
+  0% {
+    transform: translate3d(0,2.5rem,0);
+  }
+  100% {
+    transform: translate3d(0,0,0);
+    opacity: 1;
+  }
 }
 
 .portfolio-img {
@@ -264,8 +267,8 @@ footer {
   }
 
   h1 {
-    font-size: 3.25rem;
-    width: 61rem;
+    font-size: 3.5rem;
+    width: 63rem;
     max-width: 100%;
   }
 
@@ -280,7 +283,7 @@ margin-top: 2rem;
   }
 
   .hero {
-    height: 85vh;
+    height: 80vh;
   }
 
   .circle {

@@ -6,6 +6,7 @@
     "gatsby": "next",
     "gatsby-image": "next",
     "gatsby-plugin-google-analytics": "next",
+    "gatsby-plugin-netlify": "^1.0.21",
     "gatsby-plugin-offline": "next",
     "gatsby-plugin-react-helmet": "^2.0.11",
     "gatsby-plugin-sharp": "next",
