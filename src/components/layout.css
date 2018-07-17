@@ -106,13 +106,6 @@ p, figure {
   margin: 0 0 1.45rem 0;
 }
 
-
-@media only screen and (max-width: 480px) {
-  html {
-    font-size: 100%;
-  }
-}
-
 .container {
   margin: auto;
   padding: 0 1.125rem;
@@ -132,8 +125,8 @@ nav {
   z-index: 1;
   background: transparent;
   position: absolute;
-padding: 1.5rem 0;
-width: 100%;
+  padding: 1.5rem 0;
+  width: 100%;
 }
 
 ol, ul {
@@ -167,9 +160,9 @@ nav li a::before {
   position: absolute;
   content: '';
   left: 0;
-  bottom: -2px;
+  bottom: -0.125rem;
   width: 0;
-  height: 2px;
+  height: 0.125rem;
   background: #34353b;
   transition: all 0.3s ease-in-out;
 }
@@ -274,8 +267,8 @@ footer {
 
   h2 {
     font-size: 2.5rem;
-line-height: 1.3;
-margin-top: 2rem;
+    line-height: 1.3;
+    margin-top: 2rem;
   }
 
   h3 {
