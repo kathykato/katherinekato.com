@@ -12,7 +12,6 @@ module.exports = {
     },
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
-    `gatsby-plugin-sass`,
     `gatsby-plugin-offline`,
     {
       resolve: `gatsby-plugin-google-analytics`,
@@ -20,6 +19,5 @@ module.exports = {
         trackingId: `UA-90063956-1`,
       },
     },
-    `gatsby-plugin-netlify`,
   ],
 }

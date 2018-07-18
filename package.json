@@ -1,0 +1,32 @@
+{
+  "name": "katherinekato.com",
+  "version": "1.0.0",
+  "author": "Katherine Kato",
+  "dependencies": {
+    "gatsby": "next",
+    "gatsby-image": "next",
+    "gatsby-plugin-google-analytics": "next",
+    "gatsby-plugin-offline": "next",
+    "gatsby-plugin-react-helmet": "^2.0.11",
+    "gatsby-plugin-sharp": "next",
+    "gatsby-source-filesystem": "next",
+    "gatsby-transformer-sharp": "next",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "react-helmet": "^5.2.0",
+    "react-rellax": "^1.0.2",
+    "typeface-assistant": "0.0.54"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "MIT",
+  "main": "n/a",
+  "scripts": {
+    "develop": "gatsby develop",
+    "build": "gatsby build"
+  },
+  "devDependencies": {
+    "prettier": "^1.13.7"
+  }
+}
