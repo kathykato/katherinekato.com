@@ -3,6 +3,7 @@ module.exports = {
     title: 'Katherine Kato - Web Designer & Front-End Web Developer',
   },
   plugins: [
+    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
