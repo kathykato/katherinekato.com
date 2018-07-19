@@ -128,8 +128,6 @@ nav li a:hover::before {
 
 .page-content {
   padding: 1rem 0;
-  opacity: 0;
-  animation: fadeInUp 1s both;
 }
 
 .circle {
@@ -190,15 +188,6 @@ footer {
   transition: all 0.3s ease-in-out;
 }
 
-@keyframes fadeInUp {
-  0% {
-    transform: translate3d(0, 2.5rem, 0);
-  }
-  100% {
-    transform: translate3d(0, 0, 0);
-    opacity: 1;
-  }
-}
 @media (min-width: 62rem) {
   body {
     font-size: 1.25rem;

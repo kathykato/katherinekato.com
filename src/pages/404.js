@@ -7,7 +7,7 @@ const NotFoundPage = () => (
       <div className="grid hero">
         <div className="column-xs-12">
           <h1>404</h1>
-          <p>Oops! Looks like the page you are looking for does not exist.</p>
+          <p>Page not found.</p>
         </div>
       </div>
     </div>
