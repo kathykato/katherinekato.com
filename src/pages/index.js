@@ -1,8 +1,6 @@
 import React from 'react'
-import Img from 'gatsby-image'
-
 import { graphql } from 'gatsby'
-
+import Img from 'gatsby-image'
 import Layout from '../components/layout'
 
 class Index extends React.Component {
@@ -68,8 +66,8 @@ class Index extends React.Component {
 
 export default Index
 
-export const query = graphql`
-  query ImageQuery {
+export const pageQuery = graphql`
+  query IndexQuery {
     imageOne: file(
       relativePath: { regex: "/codevember.png/" }
     ) {
