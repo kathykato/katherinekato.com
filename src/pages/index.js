@@ -51,7 +51,7 @@ class Index extends React.Component {
                     <Img className="portfolio-img" fluid={work.image} alt={work.name} />
                   </a>
                   <figcaption>
-                    <h3><a href={work.link} title={work.name} target="_blank" rel="noopener noreferrer">{work.name}</a></h3>
+                    <h2><a href={work.link} title={work.name} target="_blank" rel="noopener noreferrer">{work.name}</a></h2>
                     <p>{work.subtitle}</p>
                   </figcaption>
                 </figure>

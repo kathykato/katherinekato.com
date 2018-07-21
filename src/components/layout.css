@@ -40,7 +40,7 @@ img {
   max-width: 100%;
 }
 
-h1, h2, h3 {
+h1, h2 {
   font-family: 'Assistant', sans-serif;
   color: #2e2f35;
   font-weight: 600;
@@ -54,14 +54,9 @@ h1 {
 }
 
 h2 {
-  font-size: 1.875rem;
-  line-height: 1.3;
-}
-
-h3 {
   margin: 1.5rem 0 0.5rem 0;
   padding: 0;
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   line-height: 1.1;
 }
 
@@ -71,7 +66,7 @@ ul {
   list-style-image: none;
 }
 
-h2, p, figure, img {
+p, figure, img {
   padding: 0;
   margin: 0 0 1.45rem 0;
 }
@@ -79,7 +74,7 @@ h2, p, figure, img {
 .container {
   margin: auto;
   padding: 0 1.125rem;
-  max-width: 75rem;
+  max-width: 85rem;
   width: 100%;
 }
 
@@ -135,16 +130,13 @@ nav li a:hover::before {
 }
 
 .hero {
-  height: 85vh;
+  height: 100vh;
   justify-items: center;
   align-content: center;
   justify-content: center;
   align-items: center;
 }
 
-figcaption h2 {
-  color: #2e2f35;
-}
 figcaption p {
   margin: 0 0 3rem 0;
 }
@@ -198,23 +190,17 @@ footer {
   }
 
   h1 {
-    font-size: 3.5rem;
-    width: 63rem;
+    font-size: 3.75rem;
     max-width: 100%;
+    width: 68rem;
   }
 
   h2 {
-    font-size: 2.5rem;
-    line-height: 1.3;
-    margin-top: 2rem;
-  }
-
-  h3 {
     font-size: 1.625rem;
   }
 
   .hero {
-    height: 80vh;
+    height: 90vh;
   }
 
   .circle {
