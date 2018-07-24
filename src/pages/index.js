@@ -21,7 +21,7 @@ class Index extends React.Component {
         name: 'Cryptocurrency Comparison',
         subtitle: 'Cryptocurrency comparison app made with React.',
         image: imageTwo,
-        link: 'https://codepen.io/kathykato/live/PEjNGQ/'
+        link: 'https://github.com/kathykato/cryptocurrency-comparison'
       }, {
         name: 'JavaScript 30',
         subtitle: '30 things with vanilla JavaScript for 30 days.',
