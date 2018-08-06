@@ -166,9 +166,6 @@ footer {
 .social li a:hover {
   color: #000;
 }
-.social li a:hover::before {
-  background: #000;
-}
 .social li a::before {
   position: absolute;
   content: '';
@@ -178,6 +175,19 @@ footer {
   height: 0.125rem;
   background: #cccdd8;
   transition: all 0.3s ease-in-out;
+}
+.social li a::after {
+  position: absolute;
+  content: '';
+  left: 0;
+  right: 100%;
+  bottom: -0.125rem;
+  height: 0.125rem;
+  background: #000;
+  transition: all 0.3s ease-in-out;
+}
+.social li a:hover::after {
+  right: 0;
 }
 
 @media (min-width: 62rem) {
