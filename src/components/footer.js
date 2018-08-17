@@ -2,6 +2,9 @@ import React from 'react'
 
 const Socials = [
   {
+    name: 'Email',
+    link: 'mailto:katherine.a.kato.com'
+  }, {
     name: 'Twitter',
     link: 'https://twitter.com/kato_katherine'
   }, {

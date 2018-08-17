@@ -3,18 +3,19 @@
   "version": "1.0.0",
   "author": "Katherine Kato",
   "dependencies": {
-    "gatsby": "next",
+    "gatsby": "^2.0.0-beta.69",
     "gatsby-image": "next",
     "gatsby-plugin-google-analytics": "next",
     "gatsby-plugin-offline": "next",
     "gatsby-plugin-react-helmet": "next",
-    "gatsby-plugin-sharp": "next",
+    "gatsby-plugin-sharp": "^2.0.0-beta.9",
     "gatsby-source-filesystem": "next",
     "gatsby-transformer-sharp": "next",
     "react": "^16.4.0",
     "react-dom": "^16.4.0",
     "react-helmet": "^5.2.0",
     "react-rellax": "^1.0.2",
+    "react-scrollable-anchor": "^0.6.1",
     "typeface-assistant": "0.0.54"
   },
   "keywords": [

@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'gatsby'
 
 const Header = () => (
   <header>
@@ -11,8 +10,8 @@ const Header = () => (
           </div>
           <div className="column-xs-5 column-md-3">
             <ul>
-              <li><Link to="/">Work</Link></li>
-              <li><a href="mailto:katherine.a.kato@gmail.com">Contact</a></li>
+              <li><a href="#work" title="Work">Work</a></li>
+              <li><a href="#about" title="About">About</a></li>
             </ul>
           </div>
         </div>
