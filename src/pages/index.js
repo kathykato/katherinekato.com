@@ -44,18 +44,22 @@ class Index extends React.Component {
       {
         title: 'How to create an animated logo with SVG and CSS animations',
         date: 'August 2018',
+        text: 'Learn how I used SVG and CSS animation to create an animated logo.',
         link: 'https://blog.fullstackdigital.com/how-to-create-an-animated-logo-with-svg-and-css-animations-dbf0802a47a1'
       }, {
         title: 'Creating an animated dashed line background with SVG and CSS',
         date: 'July 2018',
+        text: 'In this tutorial I will show you how to create a neat SVG background animation using CSS animation.',
         link: 'https://blog.fullstackdigital.com/creating-an-animated-dashed-line-background-with-svg-and-css-170f89f47000'
       }, {
         title: 'Revisiting My First Pen on CodePen',
         date: 'May 2018',
+        text: 'My first pen on CodePen was Kirby made with only CSS. It was my first attempt at coding up a CSS image and I found it fun to apply what I knew about CSS at the time!',
         link: 'https://codepen.io/kathykato/post/revisiting-my-first-pen-on-codepen'
       }, {
         title: 'Creating Pure CSS Images',
         date: 'January 2018',
+        text: 'I completed Codevember a while ago and created some CSS images during the month of November. Since then, I wanted to share my process on how I create art with CSS.',
         link: 'https://codepen.io/kathykato/post/creating-pure-css-images'
       }
     ]
@@ -105,7 +109,8 @@ class Index extends React.Component {
                 {Blog.map(post => (
                   <div className="blog-post"><p className="date">{post.date}</p>
                     <h4>{post.title}</h4>
-                    <a className="page-link" href={post.link} title={post.title} target="_blank" rel="noopener noreferrer">Learn more</a>
+                    <p className="blog-text">{post.text}</p>
+                    <a className="page-link" href={post.link} title={post.title} target="_blank" rel="noopener noreferrer">Read more</a>
                   </div>
                 ))}
               </div>

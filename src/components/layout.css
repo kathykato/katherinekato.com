@@ -254,6 +254,10 @@ footer {
   margin: 0;
 }
 
+.blog-text {
+  margin: 0 0 1rem 0;
+}
+
 .about {
   margin: 4rem 0 0 0;
 }
