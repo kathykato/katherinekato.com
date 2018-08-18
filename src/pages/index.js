@@ -42,6 +42,10 @@ class Index extends React.Component {
 
     const Blog = [
       {
+        title: 'How to create an animated logo with SVG and CSS animations',
+        date: 'August 2018',
+        link: 'https://blog.fullstackdigital.com/how-to-create-an-animated-logo-with-svg-and-css-animations-dbf0802a47a1'
+      }, {
         title: 'Creating an animated dashed line background with SVG and CSS',
         date: 'July 2018',
         link: 'https://blog.fullstackdigital.com/creating-an-animated-dashed-line-background-with-svg-and-css-170f89f47000'
@@ -101,7 +105,7 @@ class Index extends React.Component {
                 {Blog.map(post => (
                   <div className="blog-post"><p className="date">{post.date}</p>
                     <h4>{post.title}</h4>
-                    <a href={post.link} title={post.title} target="_blank" rel="noopener noreferrer">Learn more</a>
+                    <a className="page-link" href={post.link} title={post.title} target="_blank" rel="noopener noreferrer">Learn more</a>
                   </div>
                 ))}
               </div>
