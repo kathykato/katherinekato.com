@@ -9,7 +9,6 @@ html {
 body {
   margin: 0;
   background: #fffdfd;
-  overflow-x: hidden;
   color: #58585a;
   font-family: 'Assistant', sans-serif;
   font-size: 1rem;
@@ -22,6 +21,11 @@ body {
   font-feature-settings: "kern", "liga", "clig", "calt";
   line-height: 1.5;
   text-rendering: optimizeLegibility;
+}
+
+body > div {
+  position: relative;
+  overflow-x: hidden;
 }
 
 figcaption, figure, footer, header, main, nav {
