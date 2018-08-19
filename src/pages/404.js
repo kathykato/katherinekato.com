@@ -1,17 +1,20 @@
 import React from 'react'
-import Layout from '../components/layout'
+import { Link } from 'gatsby'
+
+import NotFoundLayout from '../components/notfoundlayout'
 
 const NotFoundPage = () => (
-  <Layout>
+  <NotFoundLayout>
     <div className="container">
-      <div className="grid hero">
+      <div className="grid not-found">
         <div className="column-xs-12">
-          <h1>404</h1>
-          <p>Page not found.</p>
+          <h1 className="face"><span>(</span> ·<sup>︵</sup>· <span>)</span></h1>
+          <h2>Nothing to see here.</h2>
+          <Link className="page-link" to="/">Go back home</Link>
         </div>
       </div>
     </div>
-  </Layout>
+  </NotFoundLayout>
 )
 
 export default NotFoundPage
