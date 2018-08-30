@@ -72,15 +72,15 @@ class Index extends React.Component {
           <section className="grid work">
             {Portfolio.map(work => (
               <div className="column-xs-12 column-md-6">
-                <figure>
-                  <a href={work.link} title={work.name} target="_blank" rel="noopener noreferrer">
+                <a href={work.link} title={work.name} target="_blank" rel="noopener noreferrer">
+                  <figure>
                     <Img className="portfolio-img" fluid={work.image} alt={work.name} />
-                  </a>
-                  <figcaption>
-                    <h3><a href={work.link} title={work.name} target="_blank" rel="noopener noreferrer">{work.name}</a></h3>
-                    <p>{work.subtitle}</p>
-                  </figcaption>
-                </figure>
+                    <figcaption>
+                      <h3>{work.name}</h3>
+                      <p>{work.subtitle}</p>
+                    </figcaption>
+                  </figure>
+                </a>
               </div>
             ))}
           </section>
@@ -104,9 +104,11 @@ class Index extends React.Component {
               <div className="blog">
                 {Blog.map(post => (
                   <div className="blog-post">
-                    <p className="date">{post.date}</p>
-                    <h4>{post.title}</h4>
-                    <a className="page-link" href={post.link} title={post.title} target="_blank" rel="noopener noreferrer">Read more</a>
+                    <a href={post.link} title={post.title} target="_blank" rel="noopener noreferrer">
+                      <p className="date">{post.date}</p>
+                      <h4>{post.title}</h4>
+                      <span className="page-link">Read more</span>
+                    </a>
                   </div>
                 ))}
               </div>
