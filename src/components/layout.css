@@ -191,10 +191,14 @@ figcaption p {
 }
 
 .portfolio-img {
-  transition: opacity 0.35s ease-in-out;
+  -webkit-clip-path: inset(0);
+  clip-path: inset(0);
+  transition: clip-path 0.3s ease;
 }
+
 .portfolio-img:hover {
-  opacity: 0.75;
+  -webkit-clip-path: inset(0.5rem);
+  clip-path: inset(0.5rem);
 }
 
 footer {
@@ -280,7 +284,7 @@ footer {
 }
 
 .blog-post {
-  margin: 0 0 3rem 0;
+  margin: 0 0 2.5rem 0;
 }
 
 .date {
@@ -300,7 +304,7 @@ footer {
 }
 
 .about h3 {
-  margin: 0 0 1.5rem 0;
+  margin: 1.5rem 0 1.5rem 0;
 }
 
 .circle {
@@ -341,6 +345,18 @@ footer {
 
   h4 {
     font-size: 1.5rem;
+  }
+
+  .about h2 {
+    margin: 1.5rem 0 2.5rem 0;
+  }
+
+  .about h3 {
+    margin: 0 0 1.5rem 0;
+  }
+
+  .blog-post {
+    margin: 0 0 3rem 0;
   }
 
   .hero {
@@ -391,17 +407,9 @@ footer {
     flex-basis: 25%;
     max-width: 25%;
   }
-  .column-md-4 {
-    flex-basis: 33.33333%;
-    max-width: 33.33333%;
-  }
   .column-md-6 {
     flex-basis: 50%;
     max-width: 50%;
-  }
-  .column-md-8 {
-    flex-basis: 66.66667%;
-    max-width: 66.66667%;
   }
   .column-md-9 {
     flex-basis: 75%;
@@ -437,17 +445,9 @@ footer {
       grid-column-start: span 3;
       grid-column-end: span 3;
     }
-    .column-md-4 {
-      grid-column-start: span 4;
-      grid-column-end: span 4;
-    }
     .column-md-6 {
       grid-column-start: span 6;
       grid-column-end: span 6;
-    }
-    .column-md-8 {
-      grid-column-start: span 8;
-      grid-column-end: span 8;
     }
     .column-md-9 {
       grid-column-start: span 9;
