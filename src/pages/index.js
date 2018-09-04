@@ -107,7 +107,7 @@ class Index extends React.Component {
                     <a href={post.link} title={post.title} target="_blank" rel="noopener noreferrer">
                       <p className="date">{post.date}</p>
                       <h4>{post.title}</h4>
-                      <span className="page-link">Read more</span>
+                      <span className="blog-link">Read more</span>
                     </a>
                   </div>
                 ))}

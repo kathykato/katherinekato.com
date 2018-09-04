@@ -29,7 +29,7 @@ const Footer = () => (
         <div className="column-xs-12">
           <ul className="social">
             {Socials.map(link => (
-              <li><a href={link.link} title={link.name} target="_blank" rel="noopener noreferrer">{link.name}</a></li>
+              <li><a className="page-link" href={link.link} title={link.name} target="_blank" rel="noopener noreferrer">{link.name}</a></li>
             ))}
           </ul>
           <p className="copyright">&copy; 2018 Katherine Kato.</p>
