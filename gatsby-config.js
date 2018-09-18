@@ -19,5 +19,18 @@ module.exports = {
         trackingId: `UA-90063956-1`,
       },
     },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: 'Katherine Kato',
+        short_name: 'KKato',
+        start_url: '/',
+        background_color: '#fffdfd',
+        theme_color: '#fffdfd',
+        display: 'minimal-ui',
+        icon: 'src/images/icon.png',
+      },
+    },
+    'gatsby-plugin-offline',
   ],
 }
