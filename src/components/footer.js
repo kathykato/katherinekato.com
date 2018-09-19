@@ -3,7 +3,7 @@ import React from 'react'
 const Socials = [
   {
     name: 'Email',
-    link: 'mailto:katherine.a.kato.com'
+    link: 'mailto:katherine.a.kato@gmail.com'
   }, {
     name: 'Twitter',
     link: 'https://twitter.com/kato_katherine'
