@@ -7,7 +7,7 @@ import Background from './background'
 import Header from './header'
 import Footer from './footer'
 
-import './layout.css'
+import './layout.scss'
 import 'typeface-assistant'
 
 const Layout = ({ children, data }) => (
