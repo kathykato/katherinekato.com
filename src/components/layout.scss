@@ -152,7 +152,7 @@ nav {
   padding: 1rem 0;
 }
 
-.hero {
+#hero {
   height: 100vh;
   justify-items: center;
   align-content: center;
@@ -253,7 +253,7 @@ footer {
   }
 }
 
-.work {
+#work {
   border-bottom: 0.0625rem solid $divider;
   margin: 0 0 3rem 0;
   padding: 0 0 2rem 0;
@@ -308,7 +308,7 @@ footer {
   }
 }
 
-.about {
+#about {
   margin: 2rem 0 0;
   h2 {
     margin: 1.5rem 0 2rem 0;
@@ -372,7 +372,7 @@ footer {
   }
 
   h2 {
-    font-size: 2.75rem;
+    font-size: 2.625rem;
   }
 
   h3 {
@@ -383,7 +383,7 @@ footer {
     font-size: 1.5rem;
   }
 
-  .about {
+  #about {
     h2 {
       margin: 1.5rem 0 2.5rem 0;
     }
@@ -392,7 +392,7 @@ footer {
     }
   }
 
-  .hero {
+  #hero {
     height: 90vh;
   }
 

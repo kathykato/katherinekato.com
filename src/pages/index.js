@@ -3,11 +3,6 @@ import { graphql } from 'gatsby'
 import Img from 'gatsby-image'
 import Layout from '../components/layout'
 
-import ScrollableAnchor from 'react-scrollable-anchor'
-import { configureAnchors } from 'react-scrollable-anchor'
-
-configureAnchors({scrollDuration: 800})
-
 class Index extends React.Component {
   render() {
     const data = this.props.data
@@ -33,8 +28,8 @@ class Index extends React.Component {
         image: imageThree,
         link: 'https://github.com/kathykato/javascript30'
       }, {
-        name: 'Gallery Template',
-        subtitle: 'Image gallery made with Flexbox and CSS Grid.',
+        name: 'Gallery',
+        subtitle: 'Image gallery template made with Flexbox and CSS Grid.',
         image: imageFour,
         link: 'https://codepen.io/kathykato/live/KRQOKY'
       }
@@ -63,13 +58,12 @@ class Index extends React.Component {
     return (
       <Layout>
         <div className="container">
-          <section className="grid hero">
+          <section className="grid" id="hero">
             <div className="column-xs-12">
               <h1 className="main-heading">I'm Katherine Kato, a front-end web developer based in Seattle. I enjoy crafting digital experiences through code &amp; design.</h1>
             </div>
           </section>
-          <ScrollableAnchor id={'work'}>
-          <section className="grid work">
+          <section className="grid" id="work">
             {Portfolio.map(work => (
               <div className="column-xs-12 column-md-6">
                 <a href={work.link} title={work.name} target="_blank" rel="noopener noreferrer">
@@ -84,9 +78,7 @@ class Index extends React.Component {
               </div>
             ))}
           </section>
-          </ScrollableAnchor>
-          <ScrollableAnchor id={'about'}>
-          <section className="grid about">
+          <section className="grid" id="about">
             <div className="column-xs-12">
               <h2>I specialize in web design and front-end web development to create delightful, efficient solutions for the web and mobile.</h2>
             </div>
@@ -114,7 +106,6 @@ class Index extends React.Component {
               </div>
             </div>
           </section>
-          </ScrollableAnchor>
         </div>
       </Layout>
     )

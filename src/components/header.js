@@ -1,5 +1,7 @@
 import React from 'react'
 
+import AnchorLink from 'react-anchor-link-smooth-scroll'
+
 const Header = () => (
   <header>
     <nav>
@@ -10,8 +12,8 @@ const Header = () => (
           </div>
           <div className="column-xs-5 column-md-3">
             <ul>
-              <li><a href="#work" title="Work">Work</a></li>
-              <li><a href="#about" title="About">About</a></li>
+              <li><AnchorLink href="#work">Work</AnchorLink></li>
+              <li><AnchorLink href="#about">About</AnchorLink></li>
             </ul>
           </div>
         </div>
