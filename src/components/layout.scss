@@ -163,8 +163,8 @@ nav {
 figure {
   &:hover {
     .portfolio-img {
-      -webkit-clip-path: inset(0.625rem);
-      clip-path: inset(0.625rem);
+      -webkit-clip-path: inset(0.5rem);
+      clip-path: inset(0.5rem);
     }
   }
   .portfolio-img {

@@ -10,6 +10,7 @@ class Index extends React.Component {
     const imageTwo = data.imageTwo.childImageSharp.fluid
     const imageThree = data.imageThree.childImageSharp.fluid
     const imageFour = data.imageFour.childImageSharp.fluid
+    const imageFive = data.imageFive.childImageSharp.fluid
 
     const Portfolio = [
       {
@@ -32,6 +33,11 @@ class Index extends React.Component {
         subtitle: 'Image gallery template made with Flexbox and CSS Grid.',
         image: imageFour,
         link: 'https://codepen.io/kathykato/live/KRQOKY'
+      }, {
+        name: `Luis's Painting`,
+        subtitle: 'Complete brand refresh for a painting company in New Jersey.',
+        image: imageFive,
+        link: 'https://luisspainting.com'
       }
     ]
 
@@ -151,6 +157,17 @@ export const pageQuery = graphql`
     }
     imageFour: file(
       relativePath: { regex: "/template.png/" }
+    ) {
+      childImageSharp {
+        fluid(
+          maxWidth: 800
+        ) {
+          ...GatsbyImageSharpFluid_noBase64
+        }
+      }
+    }
+    imageFive: file(
+      relativePath: { regex: "/lp.png/" }
     ) {
       childImageSharp {
         fluid(
