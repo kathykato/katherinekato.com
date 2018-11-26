@@ -17,26 +17,31 @@ class Index extends React.Component {
         name: 'Codevember',
         subtitle: 'Creative coding challenge during the month of November.',
         image: imageOne,
+        color: '#ffd866',
         link: 'https://github.com/kathykato/codevember'
       }, {
         name: 'Cryptocurrency Comparison',
         subtitle: 'Cryptocurrency comparison app made with React.',
         image: imageTwo,
+        color: '#dae0ef',
         link: 'https://github.com/kathykato/cryptocurrency-comparison'
       }, {
         name: 'JavaScript 30',
         subtitle: '30 things with vanilla JavaScript for 30 days.',
         image: imageThree,
+        color: '#acd2ff',
         link: 'https://github.com/kathykato/javascript30'
       }, {
         name: 'Gallery',
         subtitle: 'Image gallery template made with Flexbox and CSS Grid.',
         image: imageFour,
+        color: '#ffdde1',
         link: 'https://codepen.io/kathykato/live/KRQOKY'
       }, {
         name: `Luis's Painting`,
         subtitle: 'Complete brand refresh for a painting company in New Jersey.',
         image: imageFive,
+        color: '#eedfcc',
         link: 'https://luisspainting.com'
       }
     ]
@@ -74,7 +79,7 @@ class Index extends React.Component {
               <div className="column-xs-12 column-md-6">
                 <a href={work.link} title={work.name} target="_blank" rel="noopener noreferrer">
                   <figure>
-                    <Img className="portfolio-img" fluid={work.image} alt={work.name} />
+                    <Img className="portfolio-img" fluid={work.image} alt={work.name} backgroundColor={work.color} />
                     <figcaption>
                       <h3>{work.name}</h3>
                       <p>{work.subtitle}</p>
