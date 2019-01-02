@@ -32,7 +32,7 @@ const Footer = () => (
               <li><a className="page-link" href={link.link} title={link.name} target="_blank" rel="noopener noreferrer">{link.name}</a></li>
             ))}
           </ul>
-          <p className="copyright">&copy; 2018 Katherine Kato.</p>
+          <p className="copyright">&copy; 2019 Katherine Kato.</p>
         </div>
       </div>
     </div>
