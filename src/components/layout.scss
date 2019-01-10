@@ -1,11 +1,11 @@
+@import 'mixins';
 @import 'variables';
 
-html {
+* {
   box-sizing: border-box;
-}
-
-*, ::before, ::after {
-  box-sizing: inherit;
+  &::before, &::after {
+    box-sizing: border-box;
+  }
 }
 
 body {
@@ -125,8 +125,7 @@ nav {
         display: inline-block;
         overflow: hidden;
         &::before {
-          position: absolute;
-          content: '';
+          @include pseudo();
           left: 0;
           bottom: 0;
           width: 100%;
@@ -150,6 +149,11 @@ nav {
 
 .page-content {
   padding: 1rem 0;
+}
+
+.main-heading {
+  opacity: 0;
+  animation: introEnter 1s cubic-bezier(0.23,1,0.32,1) forwards;
 }
 
 #hero {
@@ -222,8 +226,7 @@ footer {
   display: inline-block;
   overflow: hidden;
   &::before {
-    position: absolute;
-    content: '';
+    @include pseudo();
     left: 0;
     bottom: 0;
     width: 100%;
@@ -233,8 +236,7 @@ footer {
     transform: translateX(0);
   }
   &::after {
-    position: absolute;
-    content: '';
+    @include pseudo();
     left: 0;
     bottom: 0;
     width: 100%;
@@ -283,8 +285,7 @@ footer {
     display: inline-block;
     overflow: hidden;
     &::before {
-      position: absolute;
-      content: '';
+      @include pseudo();
       left: 0;
       bottom: 0;
       width: 100%;
@@ -294,8 +295,7 @@ footer {
       transform: translateX(0);
     }
     &::after {
-      position: absolute;
-      content: '';
+      @include pseudo();
       left: 0;
       bottom: 0;
       width: 100%;
@@ -463,5 +463,16 @@ footer {
       grid-column-start: span 9;
       grid-column-end: span 9;
     }
+  }
+}
+
+@keyframes introEnter {
+  0% {
+    opacity: 0;
+    transform: translateY(1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
