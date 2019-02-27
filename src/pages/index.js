@@ -48,6 +48,10 @@ class Index extends React.Component {
 
     const Blog = [
       {
+        title: 'Creating Reveal Effects on Scroll',
+        date: 'February 2019',
+        link: 'https://medium.com/@kathykato/creating-reveal-effects-on-scroll-9cb04b39c9a5'
+      }, {
         title: 'How to create an animated logo with SVG and CSS animations',
         date: 'August 2018',
         link: 'https://blog.fullstackdigital.com/how-to-create-an-animated-logo-with-svg-and-css-animations-dbf0802a47a1'
