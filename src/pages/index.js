@@ -11,36 +11,43 @@ class Index extends React.Component {
     const imageThree = data.imageThree.childImageSharp.fluid
     const imageFour = data.imageFour.childImageSharp.fluid
     const imageFive = data.imageFive.childImageSharp.fluid
+    const imageSix = data.imageSix.childImageSharp.fluid
 
     const Portfolio = [
       {
+        name: 'Tea Ipsum',
+        subtitle: 'Tea-themed placeholder text generator built with Gatsby.js and React.',
+        image: imageOne,
+        color: '#ffd866',
+        link: 'https://github.com/kathykato/tea-ipsum'
+      }, {
         name: 'Codevember',
         subtitle: 'Creative coding challenge during the month of November.',
-        image: imageOne,
+        image: imageTwo,
         color: '#ffd866',
         link: 'https://github.com/kathykato/codevember'
       }, {
         name: 'Cryptocurrency Comparison',
         subtitle: 'Cryptocurrency comparison app made with React.',
-        image: imageTwo,
+        image: imageThree,
         color: '#dae0ef',
         link: 'https://github.com/kathykato/cryptocurrency-comparison'
       }, {
         name: 'JavaScript 30',
         subtitle: '30 things with vanilla JavaScript for 30 days.',
-        image: imageThree,
+        image: imageFour,
         color: '#acd2ff',
         link: 'https://github.com/kathykato/javascript30'
       }, {
         name: 'Gallery',
         subtitle: 'Image gallery template made with Flexbox and CSS Grid.',
-        image: imageFour,
+        image: imageFive,
         color: '#ffdde1',
         link: 'https://codepen.io/kathykato/live/KRQOKY'
       }, {
         name: `Luis's Painting`,
         subtitle: 'Complete brand refresh for a painting company in New Jersey.',
-        image: imageFive,
+        image: imageSix,
         color: '#eedfcc',
         link: 'https://luisspainting.com'
       }
@@ -132,7 +139,7 @@ export default Index
 export const pageQuery = graphql`
   query IndexQuery {
     imageOne: file(
-      relativePath: { regex: "/codevember.png/" }
+      relativePath: { regex: "/tea-ipsum.png/" }
     ) {
       childImageSharp {
         fluid(
@@ -143,7 +150,7 @@ export const pageQuery = graphql`
       }
     }
     imageTwo: file(
-      relativePath: { regex: "/cryptocurrency-comparison.png/" }
+      relativePath: { regex: "/codevember.png/" }
     ) {
       childImageSharp {
         fluid(
@@ -154,7 +161,7 @@ export const pageQuery = graphql`
       }
     }
     imageThree: file(
-      relativePath: { regex: "/js30.png/" }
+      relativePath: { regex: "/cryptocurrency-comparison.png/" }
     ) {
       childImageSharp {
         fluid(
@@ -165,7 +172,7 @@ export const pageQuery = graphql`
       }
     }
     imageFour: file(
-      relativePath: { regex: "/template.png/" }
+      relativePath: { regex: "/js30.png/" }
     ) {
       childImageSharp {
         fluid(
@@ -176,6 +183,17 @@ export const pageQuery = graphql`
       }
     }
     imageFive: file(
+      relativePath: { regex: "/template.png/" }
+    ) {
+      childImageSharp {
+        fluid(
+          maxWidth: 800
+        ) {
+          ...GatsbyImageSharpFluid_noBase64
+        }
+      }
+    }
+    imageSix: file(
       relativePath: { regex: "/lp.png/" }
     ) {
       childImageSharp {
