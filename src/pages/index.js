@@ -20,7 +20,7 @@ class Index extends React.Component {
         subtitle: 'Tea-themed placeholder text generator built with Gatsby.js and React.',
         image: imageOne,
         color: '#c9decc',
-        link: 'https://github.com/kathykato/tea-ipsum'
+        link: 'https://teaipsum.netlify.com/'
       }, {
         name: 'Codevember',
         subtitle: 'Creative coding challenge during the month of November.',
