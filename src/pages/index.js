@@ -24,13 +24,13 @@ class Index extends React.Component {
       }, {
         name: 'Codevember',
         subtitle: 'Creative coding challenge during the month of November.',
-        image: imageThree,
+        image: imageTwo,
         color: '#ffd866',
         link: 'https://github.com/kathykato/codevember'
       }, {
         name: 'CSS WordArt',
         subtitle: 'WordArt recreated in pure CSS (SCSS).',
-        image: imageTwo,
+        image: imageThree,
         color: '#ebebeb',
         link: 'https://codepen.io/kathykato/live/omxPap'
       }, {
@@ -157,7 +157,7 @@ export const pageQuery = graphql`
       }
     }
     imageTwo: file(
-      relativePath: { regex: "/css-wordart.png/" }
+      relativePath: { regex: "/codevember.png/" }
     ) {
       childImageSharp {
         fluid(
@@ -168,7 +168,7 @@ export const pageQuery = graphql`
       }
     }
     imageThree: file(
-      relativePath: { regex: "/codevember.png/" }
+      relativePath: { regex: "/css-wordart.png/" }
     ) {
       childImageSharp {
         fluid(
