@@ -62,6 +62,10 @@ class Index extends React.Component {
 
     const Blog = [
       {
+        title: 'SVG Properties and CSS',
+        date: 'May 2019',
+        link: 'https://css-tricks.com/svg-properties-and-css/'
+      }, {
         title: 'Creating Reveal Effects on Scroll',
         date: 'February 2019',
         link: 'https://medium.com/@kathykato/creating-reveal-effects-on-scroll-9cb04b39c9a5'
