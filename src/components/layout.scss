@@ -123,8 +123,6 @@ nav ul li a {
 }
 
 .avatar {
-  // width: 42px;
-  // height: 42px;
   display: none;
   img {
     border-radius: 50%;
@@ -132,13 +130,11 @@ nav ul li a {
 }
 
 .avatar-content {
-  // position: absolute;
-  // transform: translateX(0);
   position: relative;
 }
 
 .intro {
-  padding: 10rem 0 2rem;
+  padding: 9rem 0 2rem;
 }
 
 h1, h2, h3 {
@@ -150,7 +146,7 @@ h2, h3 {
 }
 
 h1 {
-  font-size: 2.375rem;
+  font-size: 2.25rem;
   font-weight: 700;
   line-height: 1.15;
   margin: 0;
