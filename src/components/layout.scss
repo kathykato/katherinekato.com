@@ -123,16 +123,18 @@ nav ul li a {
 }
 
 .avatar {
-  width: 42px;
-  height: 42px;
+  // width: 42px;
+  // height: 42px;
+  display: none;
   img {
     border-radius: 50%;
   }
 }
 
 .avatar-content {
-  position: absolute;
-  transform: translateX(3.5rem);
+  // position: absolute;
+  // transform: translateX(0);
+  position: relative;
 }
 
 .intro {
@@ -268,6 +270,7 @@ footer nav .grid > [class*="column-"] {
   }
 
   .avatar {
+    display: block;
     width: 60px;
     height: 60px;
   }
@@ -286,6 +289,7 @@ footer nav .grid > [class*="column-"] {
   .avatar-content {
     z-index: -1;
     opacity: 0;
+    position: absolute;
     transform: translateX(3rem);
     transition: transform 300ms ease, opacity 150ms ease;
   }
