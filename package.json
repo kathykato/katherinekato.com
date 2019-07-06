@@ -1,36 +1,36 @@
 {
   "name": "katherinekato.com",
-  "version": "1.0.0",
+  "description": "A front-end web developer based in Seattle. I enjoy crafting digital experiences through design and code.",
+  "version": "0.1.0",
   "author": "Katherine Kato",
   "dependencies": {
-    "gatsby": "^2.8.2",
-    "gatsby-image": "^2.1.2",
-    "gatsby-plugin-google-analytics": "^2.0.20",
-    "gatsby-plugin-manifest": "^2.1.1",
-    "gatsby-plugin-offline": "^2.1.1",
-    "gatsby-plugin-react-helmet": "^3.0.12",
-    "gatsby-plugin-sass": "^2.0.11",
-    "gatsby-plugin-sharp": "^2.1.3",
-    "gatsby-source-filesystem": "^2.0.38",
-    "gatsby-transformer-sharp": "^2.1.21",
+    "gatsby": "^2.10.4",
+    "gatsby-image": "^2.2.3",
+    "gatsby-plugin-google-analytics": "^2.1.1",
+    "gatsby-plugin-manifest": "^2.2.0",
+    "gatsby-plugin-offline": "^2.2.0",
+    "gatsby-plugin-react-helmet": "^3.1.0",
+    "gatsby-plugin-sass": "^2.1.0",
+    "gatsby-plugin-sharp": "^2.2.1",
+    "gatsby-source-filesystem": "^2.1.0",
+    "gatsby-transformer-sharp": "^2.2.0",
     "node-sass": "^4.12.0",
+    "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-anchor-link-smooth-scroll": "^1.0.12",
     "react-dom": "^16.8.6",
     "react-helmet": "^5.2.1",
-    "react-rellax": "^1.0.3",
     "typeface-assistant": "0.0.54"
   },
-  "keywords": [
-    "gatsby"
-  ],
+  "devDependencies": {
+    "prettier": "^1.18.2"
+  },
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "format": "prettier --write 'src/**/*.js'",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "devDependencies": {
-    "prettier": "^1.17.1"
+    "format": "prettier --write src/**/*.{js,jsx}",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
   }
 }

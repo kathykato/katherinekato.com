@@ -1,6 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Katherine Kato - Web Designer & Front-End Web Developer`,
+    title: `Katherine Kato - UI/UX Designer & Front-End Web Developer`,
+    description: `A front-end web developer based in Seattle. I enjoy crafting digital experiences through design and code.`,
+    author: `Katherine Kato`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -11,11 +13,9 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-    `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
-    {
-      resolve: 'gatsby-plugin-sass',
-    },
+    `gatsby-plugin-sharp`,
+    `gatsby-plugin-sass`,
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
@@ -25,15 +25,15 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'Katherine Kato',
-        short_name: 'KKato',
-        start_url: '/',
-        background_color: '#fffdfd',
-        theme_color: '#fffdfd',
-        display: 'minimal-ui',
-        icon: 'src/images/icon.png',
+        name: `Katherine Kato`,
+        short_name: `KKato`,
+        start_url: `/`,
+        background_color: `#282b42`,
+        theme_color: `#282b42`,
+        display: `minimal-ui`,
+        icon: `src/images/icon.png`, // This path is relative to the root of the site.
       },
     },
-    'gatsby-plugin-offline',
+    `gatsby-plugin-offline`,
   ],
 }

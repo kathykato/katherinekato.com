@@ -1,7 +1,11 @@
-import React from 'react'
-import { graphql } from 'gatsby'
-import Img from 'gatsby-image'
-import Layout from '../components/layout'
+import React from "react"
+import { graphql } from "gatsby"
+import Img from "gatsby-image"
+
+import Layout from "../components/layout"
+import Header from "../components/header"
+import Footer from "../components/footer"
+import SEO from "../components/seo"
 
 class Index extends React.Component {
   render() {
@@ -12,51 +16,49 @@ class Index extends React.Component {
     const imageFour = data.imageFour.childImageSharp.fluid
     const imageFive = data.imageFive.childImageSharp.fluid
     const imageSix = data.imageSix.childImageSharp.fluid
-    const imageSeven = data.imageSeven.childImageSharp.fluid
 
     const Portfolio = [
       {
-        name: 'Tea Ipsum',
-        subtitle: 'Tea-themed placeholder text generator built with Gatsby.js and React.',
+        name: 'Travel',
+        subtitle: 'Travel template featuring a slider with a swipe transition built with CSS Grid and Flexbox.',
         image: imageOne,
-        color: '#c9decc',
-        link: 'https://teaipsum.netlify.com/'
-      }, {
-        name: 'Codevember',
-        subtitle: 'Creative coding challenge during the month of November.',
-        image: imageTwo,
-        color: '#ffd866',
-        link: 'https://github.com/kathykato/codevember'
-      }, {
-        name: 'CSS WordArt',
-        subtitle: 'WordArt recreated in pure CSS (SCSS).',
-        image: imageThree,
-        color: '#ebebeb',
-        link: 'https://codepen.io/kathykato/live/omxPap'
-      }, {
-        name: 'Cryptocurrency Comparison',
-        subtitle: 'Cryptocurrency comparison app made with React.',
-        image: imageFour,
-        color: '#dae0ef',
-        link: 'https://github.com/kathykato/cryptocurrency-comparison'
-      }, {
-        name: 'JavaScript 30',
-        subtitle: '30 things with vanilla JavaScript for 30 days.',
-        image: imageFive,
-        color: '#acd2ff',
-        link: 'https://github.com/kathykato/javascript30'
-      }, {
+        color: '#fee7ca',
+        link: 'https://codepen.io/kathykato/live/MqYVOq'
+      },
+      {
         name: 'Gallery',
-        subtitle: 'Image gallery template made with Flexbox and CSS Grid.',
-        image: imageSix,
+        subtitle: 'Image gallery template built with CSS Grid and Flexbox featuring text-following cursor hover effects.',
+        image: imageTwo,
         color: '#ffdde1',
         link: 'https://codepen.io/kathykato/live/KRQOKY'
-      }, {
+      },
+      {
+        name: 'Tea Ipsum',
+        subtitle: 'Tea-themed random, placeholder text generator app built with Gatsby.js and React.',
+        image: imageThree,
+        color: '#c9decc',
+        link: 'https://teaipsum.netlify.com'
+      },
+      {
         name: `Luis's Painting`,
-        subtitle: 'Complete brand refresh for a painting company in New Jersey.',
-        image: imageSeven,
-        color: '#eedfcc',
+        subtitle: 'Complete branding and website refresh for a painting company in New Jersey.',
+        image: imageFour,
+        color: '#cbe1f2',
         link: 'https://luisspainting.com'
+      },
+      {
+        name: 'CSS WordArt',
+        subtitle: 'WordArt recreated in pure CSS (SCSS).',
+        image: imageFive,
+        color: '#f5f5f5',
+        link: 'https://codepen.io/kathykato/live/omxPap'
+      },
+      {
+        name: 'Codevember',
+        subtitle: 'Creative coding challenge during the month of November.',
+        image: imageSix,
+        color: '#ffddbf',
+        link: 'https://github.com/kathykato/codevember'
       }
     ]
 
@@ -65,23 +67,28 @@ class Index extends React.Component {
         title: 'SVG Properties and CSS',
         date: 'May 2019',
         link: 'https://css-tricks.com/svg-properties-and-css/'
-      }, {
+      },
+      {
         title: 'Creating Reveal Effects on Scroll',
         date: 'February 2019',
         link: 'https://medium.com/@kathykato/creating-reveal-effects-on-scroll-9cb04b39c9a5'
-      }, {
+      },
+      {
         title: 'How to create an animated logo with SVG and CSS animations',
         date: 'August 2018',
         link: 'https://blog.fullstackdigital.com/how-to-create-an-animated-logo-with-svg-and-css-animations-dbf0802a47a1'
-      }, {
+      },
+      {
         title: 'Creating an animated dashed line background with SVG and CSS',
         date: 'July 2018',
         link: 'https://blog.fullstackdigital.com/creating-an-animated-dashed-line-background-with-svg-and-css-170f89f47000'
-      }, {
+      },
+      {
         title: 'Revisiting My First Pen on CodePen',
         date: 'May 2018',
         link: 'https://codepen.io/kathykato/post/revisiting-my-first-pen-on-codepen'
-      }, {
+      },
+      {
         title: 'Creating Pure CSS Images',
         date: 'January 2018',
         link: 'https://codepen.io/kathykato/post/creating-pure-css-images'
@@ -90,56 +97,62 @@ class Index extends React.Component {
 
     return (
       <Layout>
-        <div className="container">
-          <section className="grid" id="hero">
-            <div className="column-xs-12">
-              <h1 className="main-heading">I'm Katherine Kato, a front-end web developer based in Seattle. I enjoy crafting digital experiences through code &amp; design.</h1>
+        <SEO title="Home" />
+        <Header />
+        <section id="work">
+          <div className="container">
+            <div className="grid">
+              {Portfolio.map(work => (
+                <div className="column-xs-12 column-sm-6 portfolio-item">
+                  <a href={work.link} title={work.name} target="_blank" rel="noopener noreferrer">
+                    <figure>
+                      <Img className="portfolio-img" fluid={work.image} alt={work.name} backgroundColor={work.color} />
+                      <figcaption>
+                        <h3>{work.name}</h3>
+                        <p>{work.subtitle}</p>
+                      </figcaption>
+                    </figure>
+                  </a>
+                </div>
+              ))}
             </div>
-          </section>
-          <section className="grid" id="work">
-            {Portfolio.map(work => (
-              <div className="column-xs-12 column-md-6">
-                <a href={work.link} title={work.name} target="_blank" rel="noopener noreferrer">
-                  <figure>
-                    <Img className="portfolio-img" fluid={work.image} alt={work.name} backgroundColor={work.color} />
-                    <figcaption>
-                      <h3>{work.name}</h3>
-                      <p>{work.subtitle}</p>
-                    </figcaption>
-                  </figure>
-                </a>
+          </div>
+        </section>
+        <section id="about">
+          <div className="container">
+            <div className="grid">
+              <div className="column-xs-12 column-md-3">
+                <h2>About</h2>
               </div>
-            ))}
-          </section>
-          <section className="grid" id="about">
-            <div className="column-xs-12">
-              <h2>I specialize in web design and front-end web development to create delightful, efficient solutions for the web and mobile.</h2>
+              <div className="column-xs-12 column-md-7">
+                <p>I enjoy translating designs into responsive, interactive experiences in HTML, CSS, and JavaScript with clean and semantic code. I am passionate about building thoughtful web experiences and care about the details. I am constantly staying on top of the emerging trends, applying industry best practices, and adapting to modern web technologies and programs. I have passion for self-learning and strive to improve and challenge my skills to become better at what I do.</p>
+                <p>My work has been featured in web publications such as the CodePen Spark, Codrops Collective, Web Designer News, and Frontend Focus. I also write and share with the web design and development community on <a class="link" title="Medium" href="https://medium.com/@kathykato" target="_blank" rel="noopener noreferrer">Medium</a> and <a class="link" title="Dev.to" href="https://dev.to/kathykato" target="_blank" rel="noopener noreferrer">Dev.to</a>. I have had the honor to publish an article for <a class="link" title="CSS-Tricks" href="https://css-tricks.com/author/katherinekato/" target="_blank" rel="noopener noreferrer">CSS-Tricks</a>.</p>
+                <p>When I'm not coding, you can often find me spending my free time drawing, reading, playing video games, or enjoying a cup of green tea.</p>
+                <p>You can also find me on <a class="link" title="CodePen" href="https://codepen.io/kathykato" target="_blank" rel="noopener noreferrer">CodePen</a>, <a class="link" title="GitHub" href="https://github.com/kathykato" target="_blank" rel="noopener noreferrer">GitHub</a>, <a class="link" title="Dribbble" href="https://dribbble.com/kathykato" target="_blank" rel="noopener noreferrer">Dribbble</a>, <a class="link" title="Twitter" href="https://twitter.com/kato_katherine" target="_blank" rel="noopener noreferrer">Twitter</a>, and <a class="link" title="Instagram" href="https://www.instagram.com/kathy.kato" target="_blank" rel="noopener noreferrer">Instagram</a>.</p>
+              </div>
             </div>
-            <div className="column-xs-12 column-md-3">
-              <h3>About Me</h3>
-            </div>
-            <div className="column-xs-12 column-md-9">
-              <p>I enjoy creating interactive, cross-browser designs in HTML, CSS, and JavaScript with clean and semantic code. I am constantly staying on top of the emerging trends, applying industry best practices, and adapting to modern web technologies and programs. I have passion for self-learning and strive to improve and challenge my skills to become better at what I do.</p>
-              <p>When I'm not coding, you can often find me spending my free time drawing, reading, or playing video games.</p>
-            </div>
-            <div className="column-xs-12 column-md-3">
-              <h3>Writing</h3>
-            </div>
-            <div className="column-xs-12 column-md-9">
-              <div className="blog">
-                {Blog.map(post => (
-                  <div className="blog-post">
-                    <a href={post.link} title={post.title} target="_blank" rel="noopener noreferrer">
+          </div>
+        </section>
+        <section id="writing">
+          <div className="container">
+            <div className="grid">
+              <div className="column-xs-12 column-md-3">
+                <h2>Writing</h2>
+              </div>
+              <div className="column-xs-12 column-md-7">
+                <div id="articles">
+                  {Blog.map(post => (
+                    <div className="post">
+                      <p className="post-title"><a className="link" href={post.link} title={post.title} target="_blank" rel="noopener noreferrer">{post.title}</a></p>
                       <p className="date">{post.date}</p>
-                      <h4>{post.title}</h4>
-                      <span className="blog-link">Read more</span>
-                    </a>
-                  </div>
-                ))}
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
-          </section>
-        </div>
+          </div>
+        </section>
+        <Footer />
       </Layout>
     )
   }
@@ -148,9 +161,9 @@ class Index extends React.Component {
 export default Index
 
 export const pageQuery = graphql`
-  query IndexQuery {
+  query PortfolioQuery {
     imageOne: file(
-      relativePath: { regex: "/tea-ipsum.png/" }
+      relativePath: { regex: "/travel.png/" }
     ) {
       childImageSharp {
         fluid(
@@ -161,7 +174,7 @@ export const pageQuery = graphql`
       }
     }
     imageTwo: file(
-      relativePath: { regex: "/codevember.png/" }
+      relativePath: { regex: "/gallery.png/" }
     ) {
       childImageSharp {
         fluid(
@@ -172,7 +185,7 @@ export const pageQuery = graphql`
       }
     }
     imageThree: file(
-      relativePath: { regex: "/css-wordart.png/" }
+      relativePath: { regex: "/tea-ipsum.png/" }
     ) {
       childImageSharp {
         fluid(
@@ -183,7 +196,7 @@ export const pageQuery = graphql`
       }
     }
     imageFour: file(
-      relativePath: { regex: "/cryptocurrency-comparison.png/" }
+      relativePath: { regex: "/lp.png/" }
     ) {
       childImageSharp {
         fluid(
@@ -194,7 +207,7 @@ export const pageQuery = graphql`
       }
     }
     imageFive: file(
-      relativePath: { regex: "/js30.png/" }
+      relativePath: { regex: "/css-wordart.png/" }
     ) {
       childImageSharp {
         fluid(
@@ -205,18 +218,7 @@ export const pageQuery = graphql`
       }
     }
     imageSix: file(
-      relativePath: { regex: "/template.png/" }
-    ) {
-      childImageSharp {
-        fluid(
-          maxWidth: 800
-        ) {
-          ...GatsbyImageSharpFluid_noBase64
-        }
-      }
-    }
-    imageSeven: file(
-      relativePath: { regex: "/lp.png/" }
+      relativePath: { regex: "/codevember.png/" }
     ) {
       childImageSharp {
         fluid(

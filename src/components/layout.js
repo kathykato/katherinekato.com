@@ -1,47 +1,36 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import Helmet from 'react-helmet'
-import { StaticQuery, graphql } from 'gatsby'
+/**
+ * Layout component that queries for data
+ * with Gatsby's useStaticQuery component
+ *
+ * See: https://www.gatsbyjs.org/docs/use-static-query/
+ */
 
-import Background from './background'
-import Header from './header'
-import Footer from './footer'
+import React from "react"
+import PropTypes from "prop-types"
+import { useStaticQuery, graphql } from "gatsby"
 
-import './layout.scss'
-import 'typeface-assistant'
+import Nav from "./nav"
+import "./layout.scss"
+import "typeface-assistant";
 
-const Layout = ({ children, data }) => (
-  <StaticQuery
-    query={graphql`
-      query SiteTitleQuery {
-        site {
-          siteMetadata {
-            title
-          }
+const Layout = ({ children }) => {
+  const data = useStaticQuery(graphql`
+    query SiteTitleQuery {
+      site {
+        siteMetadata {
+          title
         }
       }
-    `}
-    render={data => (
-      <>
-        <Helmet
-          title={data.site.siteMetadata.title}
-          meta={[
-            { name: 'description', content: 'A front-end web developer based in Seattle. I enjoy crafting digital experiences through code & design.' },
-            { name: 'keywords', content: 'katherine kato, web design, front-end web development' },
-          ]}
-        >
-          <html lang="en" />
-        </Helmet>
-        <Background />
-        <Header />
-        <main className="page-content">
-          {children}
-        </main>
-        <Footer />
-      </>
-    )}
-  />
-)
+    }
+  `)
+
+  return (
+    <>
+      <Nav siteTitle={data.site.siteMetadata.title} />
+      {children}
+    </>
+  )
+}
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
