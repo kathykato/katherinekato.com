@@ -1,6 +1,8 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
+import AOS from "aos"
+import "aos/dist/aos.css";
 
 import Layout from "../components/layout"
 import Header from "../components/header"
@@ -8,6 +10,12 @@ import Footer from "../components/footer"
 import SEO from "../components/seo"
 
 class Index extends React.Component {
+  componentDidMount() {
+    AOS.init({
+      once: true
+    })
+  }
+
   render() {
     const data = this.props.data
     const imageOne = data.imageOne.childImageSharp.fluid
@@ -106,7 +114,9 @@ class Index extends React.Component {
                 <div className="column-xs-12 column-sm-6 portfolio-item">
                   <a href={work.link} title={work.name} target="_blank" rel="noopener noreferrer">
                     <figure>
-                      <Img className="portfolio-img" fluid={work.image} alt={work.name} backgroundColor={work.color} />
+                      <div className="img-container" data-aos="image-enter">
+                        <Img className="portfolio-img" fluid={work.image} alt={work.name} backgroundColor={work.color} />
+                      </div>
                       <figcaption>
                         <h3>{work.name}</h3>
                         <p>{work.subtitle}</p>

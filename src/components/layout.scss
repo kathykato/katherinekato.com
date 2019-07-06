@@ -32,10 +32,6 @@ a {
   text-decoration: none;
 }
 
-a:active, a:hover {
-  outline-width: 0;
-}
-
 body {
   margin: 0;
   font-size: 1rem;
@@ -191,6 +187,37 @@ p.lead {
 
 a figure {
   margin-bottom: 1.5rem;
+}
+
+[data-aos="image-enter"] {
+  overflow: hidden;
+  transition: transform 1000ms ease-in-out 2000ms;
+}
+
+.img-container {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  &::before {
+    z-index: 1;
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 101%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #fff;
+    transform: scaleY(1);
+    transform-origin: 100% 0%;
+    transition-property: transform;
+    transition-duration: 600ms;
+  }
+}
+
+.img-container.aos-animate::before {
+  transform: scaleY(0);
 }
 
 figure .portfolio-img {

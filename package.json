@@ -4,6 +4,7 @@
   "version": "0.1.0",
   "author": "Katherine Kato",
   "dependencies": {
+    "aos": "^2.3.4",
     "gatsby": "^2.10.4",
     "gatsby-image": "^2.2.3",
     "gatsby-plugin-google-analytics": "^2.1.1",
@@ -18,7 +19,6 @@
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-anchor-link-smooth-scroll": "^1.0.12",
-    "react-animate-on-scroll": "^2.1.5",
     "react-dom": "^16.8.6",
     "react-helmet": "^5.2.1",
     "typeface-assistant": "0.0.54"
