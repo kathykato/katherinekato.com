@@ -176,6 +176,41 @@ p.lead {
   font-size: 1.125rem;
 }
 
+.error-intro {
+  display: flex;
+  align-content: center;
+  height: 100vh;
+
+  .not-found {
+    text-align: center;
+    
+    .face {
+      font-family: serif;
+      font-size: 4rem;
+      font-weight: 500;
+      max-width: 100%;
+      @media (min-width: $md) {
+        font-size: 6rem;
+      }
+
+      span {
+        font-family: 'Assistant', sans-serif;
+      }
+      sup {
+        position: relative;
+        top: 0.75rem;
+        @media (min-width: $md) {
+          top: 0.875rem;
+        }
+      }
+    }
+
+    .lead {
+      max-width: 100%;
+    }
+  }
+}
+
 .link {
   color: var(--link-color);
   display: inline;

@@ -7,17 +7,17 @@ import SEO from "../components/seo"
 const NotFoundPage = () => (
   <Layout>
     <SEO title="404: Not found" />
-    <header className="intro">
+    <header className="error-intro">
       <div className="container">
-        <div className="grid">
-        <div className="column-xs-12 column-sm-12 column-md-10">
-          <h1>404</h1>
-          <p className="lead">Page not found</p>
-          <p className="lead"><Link className="link" href="/">Go back home</Link></p>
+        <div className="grid not-found">
+          <div className="column-xs-12">
+            <h1 className="face"><span>(</span> ·<sup>︵</sup>· <span>)</span></h1>
+            <h2>Nothing to see here.</h2>
+            <p className="lead"><Link className="link" href="/">Go back home</Link></p>
+          </div>
         </div>
       </div>
-    </div>
-  </header>
+    </header>
   </Layout>
 )
 
