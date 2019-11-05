@@ -1,11 +1,11 @@
 import { Link } from "gatsby"
 import React from "react"
 
-import Layout from "../components/layout"
+import NotFoundLayout from "../components/notfoundlayout"
 import SEO from "../components/seo"
 
 const NotFoundPage = () => (
-  <Layout>
+  <NotFoundLayout>
     <SEO title="404: Not found" />
     <header className="error-intro">
       <div className="container">
@@ -18,7 +18,7 @@ const NotFoundPage = () => (
         </div>
       </div>
     </header>
-  </Layout>
+  </NotFoundLayout>
 )
 
 export default NotFoundPage
