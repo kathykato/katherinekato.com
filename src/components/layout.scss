@@ -58,6 +58,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background: var(--color-white);
 
+  @media (min-width: $sm) {
+    font-size: 1rem;
+  }
+
   @media (min-width: $md) {
     font-size: 1.125rem;
   }
@@ -449,7 +453,6 @@ footer {
   }
 
   nav {
-
     ul li a {
       color: var(--color-dark-nav-link);
 
@@ -463,22 +466,24 @@ footer {
     }
   }
 
-  figure figcaption p {
-    color: var(--color-dark-text);
-  }
-
   .link {
     color: var(--link-dark-color);
-    text-shadow: 1px 1px 0 var(--color-dark-body), -1px 1px 0 var(--color-dark-body), 2px 0 0 var(--color-dark-body), -2px 0 0 var(--color-dark-body);
-    box-shadow: inset 0 -1px 0 0 var(--color-dark-body), inset 0 -3px 0 0 var(--link-underline-dark-color);
+    text-shadow: 0.0625rem 0.0625rem 0 var(--color-dark-body), -0.0625rem 0.0625rem 0 var(--color-dark-body), 0.125rem 0 0 var(--color-dark-body), -0.125rem 0 0 var(--color-dark-body);
+    box-shadow: inset 0 -0.0625rem 0 0 var(--color-dark-body), inset 0 -0.1875rem 0 0 var(--link-underline-dark-color);
     
     &:hover, &:focus {
-      box-shadow: inset 0 -1px 0 0 var(--color-dark-body), inset 0 -3px 0 0 var(--link-dark-color);
+      box-shadow: inset 0 -0.0625rem 0 0 var(--color-dark-body), inset 0 -0.1875rem 0 0 var(--link-dark-color);
     }
   }
 
-  .img-container::before {
-    background: var(--color-dark-body);
+  .portfolio-item figure {
+    figcaption p {
+      color: var(--color-dark-text);
+    }
+
+    .img-container::before {
+      background: var(--color-dark-body);
+    }
   }
 
   #about .container, #writing .container {
