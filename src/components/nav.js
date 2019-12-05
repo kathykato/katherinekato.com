@@ -9,8 +9,8 @@ const Nav = () => (
     <div className="container">
       <div className="grid">
         <div className="column-xs-12 column-sm-6">
-          <figure class="media">
-            <div class="avatar">
+          <figure class="avatar">
+            <div class="avatar-block">
               <Link href="/" aria-label="Katherine Kato"><Image backgroundColor="#c9decc" alt="Katherine Kato" /></Link>
             </div>
             <figcaption class="avatar-content">

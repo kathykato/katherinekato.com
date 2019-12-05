@@ -21,22 +21,20 @@ const Socials = [
 
 const Footer = () => (
   <footer>
-    <nav>
-      <div className="container">
-        <div className="grid">
-          <div className="column-xs-12 column-sm-12 column-md-7">
-            <ul>
-              {Socials.map(link => (
-                <li><a className="link" href={link.link} title={link.name} target="_blank" rel="noopener noreferrer">{link.name}</a></li>
-              ))}
-            </ul>
-          </div>
-          <div className="column-xs-12 column-sm-12 column-md-5">
-            <span id="copyright">Designed and built by Katherine Kato &copy; {new Date().getFullYear()}</span>
-          </div>
+    <div className="container">
+      <div className="grid">
+        <div className="column-xs-12 column-sm-12 column-md-7">
+          <ul>
+            {Socials.map(link => (
+            <li><a className="link" href={link.link} title={link.name} target="_blank" rel="noopener noreferrer">{link.name}</a></li>
+            ))}
+          </ul>
+        </div>
+        <div className="column-xs-12 column-sm-12 column-md-5">
+          <span id="copyright">Designed and built by Katherine Kato &copy; {new Date().getFullYear()}</span>
         </div>
       </div>
-    </nav>
+    </div>
   </footer>
 )
 
