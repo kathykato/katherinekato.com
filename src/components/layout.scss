@@ -456,7 +456,7 @@ footer {
     ul li a {
       color: var(--color-dark-nav-link);
 
-      &:hover {
+      &:hover, &:focus {
         color: var(--color-light-pink);
       }
     }
