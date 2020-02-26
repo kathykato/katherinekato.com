@@ -498,3 +498,15 @@ footer {
     color: var(--color-light-pink);
   }
 }
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+
+  .portfolio-item .img-container.aos-animate::before {
+    transform: scaleY(0) !important;
+    transition: none !important;
+  }
+}
