@@ -72,6 +72,11 @@ class Index extends React.Component {
 
     const Blog = [
       {
+        title: '4 Ways to Animate the Color of a Text Link on Hover',
+        date: 'March 2020',
+        link: 'https://css-tricks.com/4-ways-to-animate-the-color-of-a-text-link-on-hover/'
+      },
+      {
         title: 'SVG Properties and CSS',
         date: 'May 2019',
         link: 'https://css-tricks.com/svg-properties-and-css/'
@@ -135,8 +140,8 @@ class Index extends React.Component {
                 <h2>About</h2>
               </div>
               <div className="column-xs-12 column-md-7">
-                <p>I enjoy translating designs into responsive, interactive experiences in HTML, CSS, and JavaScript with clean and semantic code. I am passionate about building thoughtful web experiences and care about the details. I am constantly staying on top of emerging trends, applying industry best practices, and adapting to modern web technologies and programs. I have a passion for self-learning and strive to improve and challenge my skills to become better at what I do.</p>
-                <p>My work has been featured in web publications such as the CodePen Spark, Codrops Collective, Web Designer News, and Frontend Focus. I also write and share with the web design and development community on <a class="link" title="Medium" href="https://medium.com/@kathykato" target="_blank" rel="noopener noreferrer">Medium</a> and <a class="link" title="Dev.to" href="https://dev.to/kathykato" target="_blank" rel="noopener noreferrer">Dev.to</a>. I have had the honor to publish an article for <a class="link" title="CSS-Tricks" href="https://css-tricks.com/author/katherinekato/" target="_blank" rel="noopener noreferrer">CSS-Tricks</a>.</p>
+                <p>I enjoy translating designs into responsive, interactive experiences in HTML, CSS, and JavaScript with semantic and accessible code. I am constantly staying on top of emerging trends, applying industry best practices, and adapting to modern web technologies and programs. I have a passion for self-learning and strive to improve and challenge my skills to become better at what I do.</p>
+                <p>My work has been featured in web publications such as the CodePen Spark, Codrops Collective, Web Designer News, and Frontend Focus. I write and share with the web design and development community on <a class="link" title="Medium" href="https://medium.com/@kathykato" target="_blank" rel="noopener noreferrer">Medium</a> and <a class="link" title="Dev.to" href="https://dev.to/kathykato" target="_blank" rel="noopener noreferrer">Dev.to</a>. I have also written for publications like <a class="link" title="CSS-Tricks" href="https://css-tricks.com/author/katherinekato/" target="_blank" rel="noopener noreferrer">CSS-Tricks</a>.</p>
                 <p>When I'm not coding, you can often find me spending my free time drawing, reading, playing video games, or enjoying a cup of green tea.</p>
                 <p>You can also find me on <a class="link" title="CodePen" href="https://codepen.io/kathykato" target="_blank" rel="noopener noreferrer">CodePen</a>, <a class="link" title="GitHub" href="https://github.com/kathykato" target="_blank" rel="noopener noreferrer">GitHub</a>, <a class="link" title="Dribbble" href="https://dribbble.com/kathykato" target="_blank" rel="noopener noreferrer">Dribbble</a>, <a class="link" title="Twitter" href="https://twitter.com/kato_katherine" target="_blank" rel="noopener noreferrer">Twitter</a>, and <a class="link" title="Instagram" href="https://www.instagram.com/kathy.kato" target="_blank" rel="noopener noreferrer">Instagram</a>.</p>
               </div>
