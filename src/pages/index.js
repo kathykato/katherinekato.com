@@ -117,7 +117,7 @@ class Index extends React.Component {
             <div className="grid">
               {Portfolio.map(work => (
                 <div className="column-xs-12 column-sm-6 portfolio-item">
-                  <a href={work.link} title={work.name} target="_blank" rel="noopener noreferrer">
+                  <a href={work.link} target="_blank" rel="noopener noreferrer">
                     <figure>
                       <div className="img-container" data-aos="image-enter">
                         <Img className="portfolio-img" fluid={work.image} alt={work.name} backgroundColor={work.color} />
@@ -141,9 +141,9 @@ class Index extends React.Component {
               </div>
               <div className="column-xs-12 column-md-7">
                 <p>I enjoy translating designs into responsive, interactive experiences in HTML, CSS, and JavaScript with semantic and accessible code. I am constantly staying on top of emerging trends, applying industry best practices, and adapting to modern web technologies and programs. I have a passion for self-learning and strive to improve and challenge my skills to become better at what I do.</p>
-                <p>My work has been featured in web publications such as the CodePen Spark, Codrops Collective, Web Designer News, and Frontend Focus. I write and share with the web design and development community on <a class="link" title="Medium" href="https://medium.com/@kathykato" target="_blank" rel="noopener noreferrer">Medium</a> and <a class="link" title="Dev.to" href="https://dev.to/kathykato" target="_blank" rel="noopener noreferrer">Dev.to</a>. I have also written for publications like <a class="link" title="CSS-Tricks" href="https://css-tricks.com/author/katherinekato/" target="_blank" rel="noopener noreferrer">CSS-Tricks</a>.</p>
+                <p>My work has been featured in web publications such as the CodePen Spark, Codrops Collective, Web Designer News, and Frontend Focus. I write and share with the web design and development community on <a class="link" href="https://medium.com/@kathykato" target="_blank" rel="noopener noreferrer">Medium</a> and <a class="link" href="https://dev.to/kathykato" target="_blank" rel="noopener noreferrer">Dev.to</a>. I have also written for publications like <a class="link" href="https://css-tricks.com/author/katherinekato/" target="_blank" rel="noopener noreferrer">CSS-Tricks</a>.</p>
                 <p>When I'm not coding, you can often find me spending my free time drawing, reading, playing video games, or enjoying a cup of green tea.</p>
-                <p>You can also find me on <a class="link" title="CodePen" href="https://codepen.io/kathykato" target="_blank" rel="noopener noreferrer">CodePen</a>, <a class="link" title="GitHub" href="https://github.com/kathykato" target="_blank" rel="noopener noreferrer">GitHub</a>, <a class="link" title="Dribbble" href="https://dribbble.com/kathykato" target="_blank" rel="noopener noreferrer">Dribbble</a>, <a class="link" title="Twitter" href="https://twitter.com/kato_katherine" target="_blank" rel="noopener noreferrer">Twitter</a>, and <a class="link" title="Instagram" href="https://www.instagram.com/kathy.kato" target="_blank" rel="noopener noreferrer">Instagram</a>.</p>
+                <p>You can also find me on <a class="link" href="https://codepen.io/kathykato" target="_blank" rel="noopener noreferrer">CodePen</a>, <a class="link" href="https://github.com/kathykato" target="_blank" rel="noopener noreferrer">GitHub</a>, <a class="link" href="https://dribbble.com/kathykato" target="_blank" rel="noopener noreferrer">Dribbble</a>, <a class="link" href="https://twitter.com/kato_katherine" target="_blank" rel="noopener noreferrer">Twitter</a>, and <a class="link" href="https://www.instagram.com/kathy.kato" target="_blank" rel="noopener noreferrer">Instagram</a>.</p>
               </div>
             </div>
           </div>
@@ -158,7 +158,7 @@ class Index extends React.Component {
                 <div id="articles">
                   {Blog.map(post => (
                     <div className="post">
-                      <p className="post-title"><a className="link" href={post.link} title={post.title} target="_blank" rel="noopener noreferrer">{post.title}</a></p>
+                      <p className="post-title"><a className="link" href={post.link} target="_blank" rel="noopener noreferrer">{post.title}</a></p>
                       <p className="date">{post.date}</p>
                     </div>
                   ))}

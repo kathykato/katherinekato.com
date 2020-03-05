@@ -276,7 +276,6 @@ p.lead {
       font-family: serif;
       font-size: 4rem;
       font-weight: 500;
-      max-width: 100%;
       @media (min-width: $md) {
         font-size: 6rem;
       }
@@ -288,9 +287,11 @@ p.lead {
       sup {
         position: relative;
         top: 0.75rem;
+        font-size: 2.5rem;
         
         @media (min-width: $md) {
           top: 0.875rem;
+          font-size: 3rem;
         }
       }
     }
