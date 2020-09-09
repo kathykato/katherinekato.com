@@ -1,7 +1,6 @@
 import { Link } from "gatsby"
 import React from "react"
 
-import AnchorLink from "react-anchor-link-smooth-scroll"
 import Image from "../components/image"
 
 const Nav = () => (
@@ -11,7 +10,9 @@ const Nav = () => (
         <div className="column-xs-12 column-sm-6">
           <figure class="avatar">
             <div class="avatar-block">
-              <Link href="/" aria-label="Katherine Kato"><Image backgroundColor="#c9decc" alt="Katherine Kato" /></Link>
+              <Link href="/" aria-label="Katherine Kato">
+                <Image backgroundColor="#c9decc" alt="Katherine Kato" />
+              </Link>
             </div>
             <figcaption class="avatar-content">
               <span>Katherine Kato</span>
@@ -20,10 +21,18 @@ const Nav = () => (
         </div>
         <div class="column-xs-12 column-sm-6">
           <ul>
-            <li><AnchorLink href="#work">Work</AnchorLink></li>
-            <li><AnchorLink href="#about">About</AnchorLink></li>
-            <li><AnchorLink href="#writing">Writing</AnchorLink></li>
-            <li><a href="mailto:katherine.a.kato@gmail.com">Contact</a></li>
+            <li>
+              <a href="#work">Work</a>
+            </li>
+            <li>
+              <a href="#about">About</a>
+            </li>
+            <li>
+              <a href="#writing">Writing</a>
+            </li>
+            <li>
+              <a href="mailto:katherine.a.kato@gmail.com">Contact</a>
+            </li>
           </ul>
         </div>
       </div>

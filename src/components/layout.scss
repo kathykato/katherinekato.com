@@ -30,6 +30,10 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 figcaption,
 figure,
 footer,
@@ -52,7 +56,6 @@ body {
   color: var(--color-gray);
   line-height: 1.55;
   font-weight: normal;
-  word-wrap: break-word;
   font-kerning: normal;
   font-feature-settings: "kern", "liga", "clig", "calt";
   -webkit-font-smoothing: antialiased;
@@ -508,7 +511,7 @@ footer {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  * {
+  html {
     transition: none !important;
     scroll-behavior: auto !important;
   }
