@@ -306,17 +306,16 @@ p.lead {
 
 .link {
   color: var(--link-color);
-  text-shadow: 0.0625rem 0.0625rem 0 var(--color-white),
-    -0.0625rem 0.0625rem 0 var(--color-white), 0.125rem 0 0 var(--color-white),
-    -0.125rem 0 0 var(--color-white);
-  box-shadow: inset 0 -0.0625rem 0 0 var(--color-white),
-    inset 0 -0.1875rem 0 0 var(--link-underline-color);
-  transition: box-shadow 150ms ease;
+  text-decoration-line: underline;
+  text-decoration-skip-ink: auto;
+  text-decoration-color: var(--link-underline-color);
+  text-underline-offset: 0.125em;
+  text-decoration-thickness: 2px;
+  transition: text-decoration-color 0.15s ease;
 
   &:hover,
   &:focus {
-    box-shadow: inset 0 -0.0625rem 0 0 var(--color-white),
-      inset 0 -0.1875rem 0 0 var(--link-color);
+    text-decoration-color: var(--link-color);
   }
 }
 
@@ -476,16 +475,11 @@ footer {
 
   .link {
     color: var(--link-dark-color);
-    text-shadow: 0.0625rem 0.0625rem 0 var(--color-dark-body),
-      -0.0625rem 0.0625rem 0 var(--color-dark-body),
-      0.125rem 0 0 var(--color-dark-body), -0.125rem 0 0 var(--color-dark-body);
-    box-shadow: inset 0 -0.0625rem 0 0 var(--color-dark-body),
-      inset 0 -0.1875rem 0 0 var(--link-underline-dark-color);
+    text-decoration-color: var(--link-underline-dark-color);
 
     &:hover,
     &:focus {
-      box-shadow: inset 0 -0.0625rem 0 0 var(--color-dark-body),
-        inset 0 -0.1875rem 0 0 var(--link-dark-color);
+      text-decoration-color: var(--link-dark-color);
     }
   }
 
