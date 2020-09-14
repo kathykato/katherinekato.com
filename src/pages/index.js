@@ -29,7 +29,7 @@ class Index extends React.Component {
       {
         name: "Travel",
         subtitle:
-          "Travel template featuring a slider with a swipe transition built with CSS Grid and Flexbox.",
+          "Layout template featuring a slider with a swipe transition built with CSS Grid and Flexbox.",
         image: imageOne,
         color: "#fee7ca",
         link: "https://codepen.io/kathykato/live/MqYVOq",
@@ -126,7 +126,12 @@ class Index extends React.Component {
             <div className="grid">
               {Portfolio.map(work => (
                 <div className="column-xs-12 column-sm-6 portfolio-item">
-                  <a href={work.link} target="_blank" rel="noopener noreferrer">
+                  <a
+                    href={work.link}
+                    aria-label={work.name}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <figure>
                       <div className="img-container" data-aos="image-enter">
                         <Img
