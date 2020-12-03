@@ -511,7 +511,7 @@ footer {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  html {
+  * {
     transition: none !important;
     scroll-behavior: auto !important;
   }
