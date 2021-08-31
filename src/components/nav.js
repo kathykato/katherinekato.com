@@ -10,7 +10,7 @@ const Nav = () => (
         <div className="column-xs-12 column-sm-6">
           <figure className="avatar">
             <div className="avatar-block">
-              <Link href="/" aria-label="Katherine Kato">
+              <Link to="/" aria-label="Katherine Kato">
                 <Image backgroundColor="#c9decc" alt="Katherine Kato" />
               </Link>
             </div>
