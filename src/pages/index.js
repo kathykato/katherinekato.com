@@ -174,7 +174,7 @@ class Index extends React.Component {
                   Frontend Focus. I write and share with the web design and
                   development community on{" "}
                   <a
-                    class="link"
+                    className="link"
                     href="https://medium.com/@kathykato"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -183,7 +183,7 @@ class Index extends React.Component {
                   </a>{" "}
                   and{" "}
                   <a
-                    class="link"
+                    className="link"
                     href="https://dev.to/kathykato"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -192,7 +192,7 @@ class Index extends React.Component {
                   </a>
                   . I have also written for publications like{" "}
                   <a
-                    class="link"
+                    className="link"
                     href="https://css-tricks.com/author/katherinekato/"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -209,7 +209,7 @@ class Index extends React.Component {
                 <p>
                   You can also find me on{" "}
                   <a
-                    class="link"
+                    className="link"
                     href="https://codepen.io/kathykato"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -218,7 +218,7 @@ class Index extends React.Component {
                   </a>
                   ,{" "}
                   <a
-                    class="link"
+                    className="link"
                     href="https://github.com/kathykato"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -227,7 +227,7 @@ class Index extends React.Component {
                   </a>
                   ,{" "}
                   <a
-                    class="link"
+                    className="link"
                     href="https://dribbble.com/kathykato"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -236,7 +236,7 @@ class Index extends React.Component {
                   </a>
                   ,{" "}
                   <a
-                    class="link"
+                    className="link"
                     href="https://twitter.com/kato_katherine"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -245,7 +245,7 @@ class Index extends React.Component {
                   </a>
                   , and{" "}
                   <a
-                    class="link"
+                    className="link"
                     href="https://www.instagram.com/kathy.kato"
                     target="_blank"
                     rel="noopener noreferrer"
