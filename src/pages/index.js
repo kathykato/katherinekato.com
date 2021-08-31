@@ -125,7 +125,10 @@ class Index extends React.Component {
           <div className="container">
             <div className="grid">
               {Portfolio.map(work => (
-                <div className="column-xs-12 column-sm-6 portfolio-item">
+                <div
+                  className="column-xs-12 column-sm-6 portfolio-item"
+                  key={work.name}
+                >
                   <a
                     href={work.link}
                     aria-label={work.name}
@@ -267,7 +270,7 @@ class Index extends React.Component {
               <div className="column-xs-12 column-md-7">
                 <div id="articles">
                   {Blog.map(post => (
-                    <div className="post">
+                    <div className="post" key={post.title}>
                       <p className="post-title">
                         <a
                           className="link"
