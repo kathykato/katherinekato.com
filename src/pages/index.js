@@ -299,42 +299,42 @@ export const pageQuery = graphql`
     imageOne: file(relativePath: { regex: "/travel.png/" }) {
       childImageSharp {
         fluid(maxWidth: 800) {
-          ...GatsbyImageSharpFluid_noBase64
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
     imageTwo: file(relativePath: { regex: "/gallery.png/" }) {
       childImageSharp {
         fluid(maxWidth: 800) {
-          ...GatsbyImageSharpFluid_noBase64
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
     imageThree: file(relativePath: { regex: "/tea-ipsum.png/" }) {
       childImageSharp {
         fluid(maxWidth: 800) {
-          ...GatsbyImageSharpFluid_noBase64
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
     imageFour: file(relativePath: { regex: "/lp.png/" }) {
       childImageSharp {
         fluid(maxWidth: 800) {
-          ...GatsbyImageSharpFluid_noBase64
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
     imageFive: file(relativePath: { regex: "/css-wordart.png/" }) {
       childImageSharp {
         fluid(maxWidth: 800) {
-          ...GatsbyImageSharpFluid_noBase64
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
     imageSix: file(relativePath: { regex: "/codevember.png/" }) {
       childImageSharp {
         fluid(maxWidth: 800) {
-          ...GatsbyImageSharpFluid_noBase64
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
